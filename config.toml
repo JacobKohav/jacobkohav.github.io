@@ -1,5 +1,5 @@
 # baseURL = 'http://example.org/' # Original
-baseURL = 'https://jacobkohav.github.io/jacobkohav/'
+baseURL = 'https://jacobkohav.github.io/'
 languageCode = 'en-us'
 title = 'Jacob Kohav`s Portfolio'
 theme = 'ananke'
