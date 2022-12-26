@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jacobkohav.github.io/jacobkohav/about/</loc>
+    <lastmod>2022-12-25T15:24:42-07:00</lastmod>
+  </url><url>
+    <loc>https://jacobkohav.github.io/jacobkohav/contact/</loc>
+    <lastmod>2022-12-25T15:24:42-07:00</lastmod>
+  </url><url>
+    <loc>https://jacobkohav.github.io/jacobkohav/</loc>
+    <lastmod>2022-12-23T20:49:40-07:00</lastmod>
+  </url><url>
+    <loc>https://jacobkohav.github.io/jacobkohav/posts/my-first-post/</loc>
+    <lastmod>2022-12-23T20:49:40-07:00</lastmod>
+  </url><url>
+    <loc>https://jacobkohav.github.io/jacobkohav/posts/</loc>
+    <lastmod>2022-12-23T20:49:40-07:00</lastmod>
+  </url><url>
+    <loc>https://jacobkohav.github.io/jacobkohav/categories/</loc>
+  </url><url>
+    <loc>https://jacobkohav.github.io/jacobkohav/tags/</loc>
+  </url>
+</urlset>

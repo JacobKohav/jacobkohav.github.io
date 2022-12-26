@@ -1,0 +1,30 @@
+# baseURL = 'http://example.org/' # Original
+baseURL = 'https://jacobkohav.github.io/jacobkohav/'
+languageCode = 'en-us'
+title = 'Jacob Kohav`s Portfolio'
+theme = 'ananke'
+
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    url = "/about/"
+
+[[menu.main]]
+    name = "Contact"
+    identifier = "contact"
+    url = "/contact/"
+
+[params]
+  text_color = ""
+  # read_more_copy: Read more about this entry
+
+[[params.ananke_socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/jacob-kohav/"
+
+[[params.ananke_socials]]
+name = "github"
+url = "https://github.com/JacobKohav"
+# name: mastodon
+# url: https://social.example.com/@username
+# rel: me noopener
