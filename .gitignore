@@ -1,1 +1,4 @@
 .hugo_build.lock
+
+# Contents of public are equivalent to /docs
+/public 
