@@ -239,7 +239,8 @@ params:
     # title: "Custom Name"
     items:
       - title: Leading SAFe
-        content: I solved all problems with optimal.
+        content: |
+          I solved all problems with optimal.
         icon: fa fa-envelope
         url: https://example.com
         links:
@@ -266,7 +267,15 @@ params:
     # Analysis of NYPD Shooting Incidents with the following Data Science techniques 1. Importing 2. Cleaning 3. Transformation 4. Analysis 5. Visualization 6. Bias Identification along with a summary and conclusion.
 
       - title: NYPD Shooting Incidents Analysis
-        content: Analysis of NYPD Shooting Incidents with the following Data Science techniques 1. Importing 2. Cleaning 3. Transformation 4. Analysis 5. Visualization 6. Bias Identification along with a summary and conclusion.
+        content: |
+          Analysis of NYPD Shooting Incidents with the following Data Science techniques
+            |  |  |
+            | ---  | ---  |
+            | ○ Importing   | ○ Cleaning |
+            | ○ Transformation | ○ Analysis |
+            | ○ Visualization | ○ Bias identification |  
+
+          <br> along with a summary and conclusion.
         image: https://i.ytimg.com/vi/4ZUXYOTiZsg/maxresdefault.jpg
         # featured:
         #   name: Demo
@@ -283,11 +292,11 @@ params:
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: Simulation of Random Walks
-        content: 
+        content: |
          Animal movement predictions through a random walk simulation. Implementation and assessment of the performance of several of movement schemes in two dimensions 
-          - 1. Biased Random Walks (BRW) 
-          - 2. Correlated Random Walks (CRW) 
-          - 3. Biased Correlated Random Walks (BCRW)
+          - Biased Random Walks (BRW) 
+          - Correlated Random Walks (CRW) 
+          - Biased Correlated Random Walks (BCRW)
         image: https://fox8.com/wp-content/uploads/sites/12/2021/06/sheep.jpg?w=1280
         # featured:
         #   name: Demo
@@ -304,8 +313,9 @@ params:
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
-      - title: Course-Grained Simulation of a Protein
-        content: Protein structure prediction through a dynamics simulation through a two dimensional coarse-grained model of a protein which consists of a chain of N amino acids. Each amino acid is represented by a circle connected to amino acids via an harmonic spring potential.
+      - title: Coarse-Grained Simulation of a Protein
+        content: |
+          Protein structure prediction through a dynamics simulation through a two dimensional coarse-grained model of a protein which consists of a chain of N amino acids. Each amino acid is represented by a circle connected to amino acids via an harmonic spring potential.
         image: https://i.pinimg.com/originals/7e/42/57/7e4257461ea477895873e320dfce9ff5.png
         # featured:
         #   name: Demo
@@ -319,7 +329,13 @@ params:
             url: https://github.com/JacobKohav/Protein#course-grained-simulation-of-a-protein
 
       - title: Simulation of Flocks
-        content: Illustration of swarm intelligence through a flocking example utilizing coherent emergent behavior (focking) of a swarm, when each agent is 1. Attracted to other agents 2. Repulsed when too close to other agents 3. Performing velocity alignment with other agents Examination of this behavior in 2D; the swarm will be composed of N agents; each agent will be defined by its position (p) and velocity (v).
+        content: |
+          Illustration of swarm intelligence through a flocking example utilizing coherent emergent behavior (flocking) of a swarm, when each agent is 
+            - Attracted to other agents 
+            - Repulsed when too close to other agents
+            - Performing velocity alignment with other agents 
+            
+          Examination of this behavior in 2D; the swarm will be composed of N agents; each agent will be defined by its position (p) and velocity (v).
 
         # image: /resources/_gen/images/Simulation_of_Flocks.jpg
         image: https://media.istockphoto.com/id/1050922264/vector/vector-cartoon-seagulls-flying-in-the-air.jpg?s=612x612&w=0&k=20&c=F_TqNVATVnmwVseTE987pmX0nXtBB8glCDJOFwq-MO4=
