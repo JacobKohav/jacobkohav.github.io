@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Profile</title>
+    <title>Jacob Kohav&#39;s portfolio</title>
     <link>https://jacobkohav.github.io/</link>
-    <description>Recent content on Hugo Profile</description>
+    <description>Recent content on Jacob Kohav&#39;s portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Dec 2022 20:49:40 -0700</lastBuildDate><atom:link href="https://jacobkohav.github.io/index.xml" rel="self" type="application/rss+xml" />
