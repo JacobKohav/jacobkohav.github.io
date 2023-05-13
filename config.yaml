@@ -136,17 +136,18 @@ params:
           url: https://www.linkedin.com/in/jacob-kohav/
         - icon: fa fa-envelope
           url: mailto:jacob.kohav@colorado.edu?subject=Connect%20with%20Jacob
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+      # customIcons:
+      #   - icon: /fav.png
+      #     url: "https://example.com"
 
   # About
   about:
     enable: true
     title: "About Me"
-    image: "/images/me.png"
+    # image: "/images/me.png"
+    image: "/portrait.jpeg"
     content: |-
-      I seek to improve your organization’s ability to create value by synthesizing software engineering and data science skills with Lean-Agile paradigms. I apply my technical and value-production skills to bridge the communication gap throughout the entire development chain.    
+      <br /><br /><br />I seek to improve your organization’s ability to create value by synthesizing software engineering and data science skills with Lean-Agile paradigms. I apply my technical and value-production skills to bridge the communication gap throughout the entire development chain.    
     skills:
       enable: false
       title: "Here are a few technologies I've been working with recently:"
@@ -251,7 +252,7 @@ params:
         url: https://s3.amazonaws.com/scruminc-certs/RSM-0633299
       
       - title: Certified SAFe® 5 Agilist ⇲
-      #   content: 
+        # content:
         url: https://www.credly.com/badges/c6d27b44-d835-471d-ae63-9dfb0efe137e/linked_in_profile
 
   # projects
@@ -271,7 +272,7 @@ params:
             | ○ Visualization | ○ Bias identification |  
 
           <br> along with a summary and conclusion.
-        image: https://i.ytimg.com/vi/4ZUXYOTiZsg/maxresdefault.jpg
+        image: "shooting.jpg"
         # featured:
         #   name: Demo
         #   link: https://hugo-profile.netlify.app
@@ -292,7 +293,7 @@ params:
           - Biased Random Walks (BRW) 
           - Correlated Random Walks (CRW) 
           - Biased Correlated Random Walks (BCRW)
-        image: https://fox8.com/wp-content/uploads/sites/12/2021/06/sheep.jpg?w=1280
+        image: "/walks.jpg"
         # featured:
         #   name: Demo
         #   link: https://hugo-profile.netlify.app
@@ -311,7 +312,8 @@ params:
       - title: Coarse-Grained Simulation of a Protein
         content: |
           Protein structure prediction through a dynamics simulation through a two dimensional coarse-grained model of a protein which consists of a chain of N amino acids. Each amino acid is represented by a circle connected to amino acids via an harmonic spring potential.
-        image: https://i.pinimg.com/originals/7e/42/57/7e4257461ea477895873e320dfce9ff5.png
+        # image: https://i.pinimg.com/originals/7e/42/57/7e4257461ea477895873e320dfce9ff5.png
+        image: "/protein.png" 
         # featured:
         #   name: Demo
         #   link: https://django-converter.herokuapp.com
@@ -333,7 +335,7 @@ params:
           Examination of this behavior in 2D; the swarm will be composed of N agents; each agent will be defined by its position (p) and velocity (v).
 
         # image: /resources/_gen/images/Simulation_of_Flocks.jpg
-        image: https://media.istockphoto.com/id/1050922264/vector/vector-cartoon-seagulls-flying-in-the-air.jpg?s=612x612&w=0&k=20&c=F_TqNVATVnmwVseTE987pmX0nXtBB8glCDJOFwq-MO4=
+        image: "/simulation_of_flocks.jpg"
         # featured:
         #   name: Demo V2
         #   link: https://hugo-profile-2.netlify.app
