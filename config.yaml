@@ -200,7 +200,12 @@ params:
           url: "https://www.colorado.edu/"
         date: "2022 - present"
         GPA: "4.00 / 4.00"
-        # content: |-
+        content: |-
+          
+            | <span style="display: inline-block; width:270px"> </span> | <span style="display: inline-block; width:340px"> </span> |  |
+            | ---  | ---  | --- | 
+            | ○ NeuroLeadership   | ○ Entrepreneurship for Engineers | ○ Digital Transformation |
+            | ○ Resilience Engineering | ○ Lean and Agile Management | |
 
       - title: "Masters of Science in Data Science"
         school:
@@ -208,7 +213,10 @@ params:
           url: "https://www.colorado.edu/"
         date: "2021 - present"
         GPA: "4.00 / 4.00"
-        # content: |-       
+        content: |-       
+            | <span style="display: inline-block; width:250px"> </span> | <span style="display: inline-block; width:320px"> </span> |  |
+            | ---  | ---  | --- | 
+            | ○ Data Science as a Field   | ○ Cybersecurity for Datascience | ○ Ethical Issues in Data Science |
 
       - title: "Bachelors in Computer Science"
         school:
@@ -216,11 +224,19 @@ params:
           url: "https://www.colorado.edu/"
         date: "2020"
         GPA: "3.60 / 4.00"
-        # content: 
-        featuredLink:
-          enable: false
-          name: "My academic record"
-          url: "https://example.com"
+        content: |-
+            |<span style="display: inline-block; width:210px"> </span> | <span style="display: inline-block; width:400px"> </span> |  |
+            | ---  | ---  |  --- | 
+            | ○ Data Structures | ○ Software Development Tools/Methodologies | ○ Human-Computer Interaction |
+            | ○ Discrete Structures | ○ Human-Centered Computing | ○ Algorithms |
+            | ○ Cognitive Science | ○ Principles of Programming Languages | ○ Computer Systems |
+            | ○ Linear Algebra | ○ Dynamic Models in Biology |  |
+
+
+        # featuredLink:
+        #   enable: false
+        #   name: "My academic record"
+        #   url: "https://example.com"
 
   # Achievements
   achievements:
@@ -231,20 +247,25 @@ params:
     #       <a class="external" href="https://example.org" target="_blank">external link</a>
     #  |͟↗̱| ❐ ↗\ ⧉ ⇲ ⧉ ❐ ⍈
       - title: SAFe® 5 Lean Portfolio Manager ⇲
-        # content: 
+        content: 
+          <img src="cert_mark_LPM_small_150px.png" style="float:right;width:80px" />
+
         # icon: fa fa-envelope
         url: https://www.credly.com/badges/f7fbc2c1-82ca-4914-9a32-0eff40ff3533/linked_in_profile
 
       - title: Certified SAFe® 5 Advanced Scrum Master ⇲
-        # content: 
+        content: 
+          <img src="cert_mark_SASM_small_150px.png" style="float:right;width:80px" />
         url: https://www.credly.com/badges/0dabaffa-5fb7-415a-8ac0-82f22bec5bf4/linked_in_profile
 
       - title: Certified SAFe® 5 Practitioner ⇲
-        # content: 
+        content: 
+          <img src="cert_mark_SP_small_150px.png" style="float:right;width:80px" />
         url: https://www.credly.com/badges/077078df-716a-4d24-afe2-6af962761ffe/linked_in_profile
 
       - title: Certified SAFe® 5 Scrum Master ⇲
-        # content: 
+        content: 
+          <img src="cert_mark_SSM_small_150px.png" style="float:right;width:80px" />
         url: https://www.credly.com/badges/421f95fe-800f-4478-ba9e-d7378fb5a0b2/linked_in_profile
       
       - title: Registered Scrum Master™ ⇲
@@ -252,10 +273,12 @@ params:
         url: https://s3.amazonaws.com/scruminc-certs/RSM-0633299
       
       - title: Certified SAFe® 5 Agilist ⇲
-        # content:
+        content: |-
+          <br>       
+          <img src="cert_mark_SA_small_150px.png" style="float:right;width:80px" />
         url: https://www.credly.com/badges/c6d27b44-d835-471d-ae63-9dfb0efe137e/linked_in_profile
 
-  # projects
+    # projects
   projects:
     enable: true
     # title: "Custom Name"
@@ -264,7 +287,8 @@ params:
 
       - title: NYPD Shooting Incidents Analysis
         content: |
-          Analysis of NYPD Shooting Incidents with the following Data Science techniques
+          <p align='justify'>Analysis of NYPD Shooting Incidents with the following Data Science techniques</p>
+
             |  |  |
             | ---  | ---  |
             | ○ Importing   | ○ Cleaning |
@@ -286,10 +310,12 @@ params:
             url: https://github.com/JacobKohav/NYPD_Shooting_Incident
           # - icon: fab fa-twitter
           #   url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          # <p align='justify'>Farhan Khan</p>
 
       - title: Simulation of Random Walks
         content: |
-         Animal movement predictions through a random walk simulation. Implementation and assessment of the performance of several of movement schemes in two dimensions 
+         <p align='justify'>Animal movement predictions through a random walk simulation. Implementation and assessment of the performance of several of movement schemes in two dimensions</p>
+         
           - Biased Random Walks (BRW) 
           - Correlated Random Walks (CRW) 
           - Biased Correlated Random Walks (BCRW)
@@ -311,7 +337,7 @@ params:
 
       - title: Coarse-Grained Simulation of a Protein
         content: |
-          Protein structure prediction through a dynamics simulation through a two dimensional coarse-grained model of a protein which consists of a chain of N amino acids. Each amino acid is represented by a circle connected to amino acids via an harmonic spring potential.
+          <p align='justify'>Protein structure prediction through a dynamics simulation through a two dimensional coarse-grained model of a protein which consists of a chain of N amino acids. Each amino acid is represented by a circle connected to amino acids via an harmonic spring potential.</p>
         # image: https://i.pinimg.com/originals/7e/42/57/7e4257461ea477895873e320dfce9ff5.png
         image: "/protein.png" 
         # featured:
@@ -327,14 +353,13 @@ params:
 
       - title: Simulation of Flocks
         content: |
-          Illustration of swarm intelligence through a flocking example utilizing coherent emergent behavior (flocking) of a swarm, when each agent is 
+          <p align='justify'>Illustration of swarm intelligence through a flocking example utilizing coherent emergent behavior (flocking) of a swarm, when each agent is </p>
+            
             - Attracted to other agents 
             - Repulsed when too close to other agents
             - Performing velocity alignment with other agents 
-            
-          Examination of this behavior in 2D; the swarm will be composed of N agents; each agent will be defined by its position (p) and velocity (v).
-
-        # image: /resources/_gen/images/Simulation_of_Flocks.jpg
+        
+          <p align='justify'>Examination of this behavior in 2D; the swarm will be composed of N agents; each agent will be defined by its position (p) and velocity (v).</p>
         image: "/simulation_of_flocks.jpg"
         # featured:
         #   name: Demo V2
@@ -343,6 +368,7 @@ params:
           - "Python"
           - "Modelling"
           - "Biology"
+          - "Swarm Intelligence"
         links:
           - icon: fab fa-github
             url: https://github.com/JacobKohav/Flock
