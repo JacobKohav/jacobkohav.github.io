@@ -246,37 +246,56 @@ params:
     # <i class="fa fa-external-link-square" aria-hidden="true"></i>
     #       <a class="external" href="https://example.org" target="_blank">external link</a>
     #  |͟↗̱| ❐ ↗\ ⧉ ⇲ ⧉ ❐ ⍈
+    # Import image: <img src="cert_mark_SASM_small_150px.png" style="float:right;width:80px" />
+
+      - title: Certified SAFe® 5 Agile Product Manager ⇲
+        content: 
+          <br>
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="364ce124-d362-4bc3-b0f2-7933496791f5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/364ce124-d362-4bc3-b0f2-7933496791f5/public_url
+
       - title: SAFe® 5 Lean Portfolio Manager ⇲
         content: 
-          <img src="cert_mark_LPM_small_150px.png" style="float:right;width:80px" />
-
+          <br>
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="7b08d210-105c-463c-ac01-436649bf9eda" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         # icon: fa fa-envelope
         url: https://www.credly.com/badges/f7fbc2c1-82ca-4914-9a32-0eff40ff3533/linked_in_profile
 
       - title: Certified SAFe® 5 Advanced Scrum Master ⇲
         content: 
-          <img src="cert_mark_SASM_small_150px.png" style="float:right;width:80px" />
+          <br>       
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="810eb161-6223-48a3-943a-3e21bf6b0aa5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/0dabaffa-5fb7-415a-8ac0-82f22bec5bf4/linked_in_profile
 
       - title: Certified SAFe® 5 Practitioner ⇲
         content: 
-          <img src="cert_mark_SP_small_150px.png" style="float:right;width:80px" />
+          <br>       
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="0dce91ab-f3ee-4fcb-bce0-39735f318a32" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/077078df-716a-4d24-afe2-6af962761ffe/linked_in_profile
 
       - title: Certified SAFe® 5 Scrum Master ⇲
         content: 
-          <img src="cert_mark_SSM_small_150px.png" style="float:right;width:80px" />
+          <br>       
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="fd293615-6ff9-469e-a996-6cf97e38cb77" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/421f95fe-800f-4478-ba9e-d7378fb5a0b2/linked_in_profile
       
       - title: Registered Scrum Master™ ⇲
-      #   content: 
+        content: 
+          <br>
+          <img src="SM-Badge.webp" style="width:210px" />
         url: https://s3.amazonaws.com/scruminc-certs/RSM-0633299
       
       - title: Certified SAFe® 5 Agilist ⇲
         content: |-
           <br>       
-          <img src="cert_mark_SA_small_150px.png" style="float:right;width:80px" />
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="1c109393-9758-4493-af75-a31d127c05e7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/c6d27b44-d835-471d-ae63-9dfb0efe137e/linked_in_profile
+
+      - title: AI Fundamentals Practitioner Badge ⇲
+        content: |-
+          <br>       
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="47ae6906-1d22-4468-a87e-89ee75104281" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/47ae6906-1d22-4468-a87e-89ee75104281/public_url
 
     # projects
   projects:
