@@ -71,7 +71,7 @@ params:
   animate: true
 
   theme:
-    disableThemeToggle: true
+    disableThemeToggle: false
     # defaultTheme: "light" # dark
 
   font:
@@ -248,36 +248,49 @@ params:
     #  |͟↗̱| ❐ ↗\ ⧉ ⇲ ⧉ ❐ ⍈
     # Import image: <img src="cert_mark_SASM_small_150px.png" style="float:right;width:80px" />
 
-      - title: Certified SAFe® 5 Agile Product Manager ⇲
+      - title: Registered Product Owner™ ⇲
         content: 
           <br>
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="364ce124-d362-4bc3-b0f2-7933496791f5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        url: https://www.credly.com/badges/364ce124-d362-4bc3-b0f2-7933496791f5/public_url
+          <img src="Favicon_RPO_32.svg" style="width:210px" />
+          # <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="3bf4e57f-d9c8-42c7-aab5-d3c7878532e9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://s3.amazonaws.com/scruminc-certs/RPO-8185695
 
-      - title: SAFe® 5 Lean Portfolio Manager ⇲
+      - title: Certified SAFe® 6 Release Train Engineer ⇲
         content: 
           <br>
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="7b08d210-105c-463c-ac01-436649bf9eda" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="3bf4e57f-d9c8-42c7-aab5-d3c7878532e9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/3bf4e57f-d9c8-42c7-aab5-d3c7878532e9/public_url
+
+      - title: Certified SAFe® 6 Agile Product Manager ⇲
+        content: 
+          <br>
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="317fc404-7936-4821-9d08-bbb94b08ff33" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/317fc404-7936-4821-9d08-bbb94b08ff33/public_url
+
+      - title: SAFe® 6 Lean Portfolio Manager ⇲
+        content: 
+          <br>
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="8721bada-c00e-4d6f-8a42-fad6a7d732d5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         # icon: fa fa-envelope
-        url: https://www.credly.com/badges/f7fbc2c1-82ca-4914-9a32-0eff40ff3533/linked_in_profile
+        url: https://www.credly.com/badges/8721bada-c00e-4d6f-8a42-fad6a7d732d5/public_url
 
-      - title: Certified SAFe® 5 Advanced Scrum Master ⇲
+      - title: Certified SAFe® 6 Advanced Scrum Master ⇲
         content: 
           <br>       
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="810eb161-6223-48a3-943a-3e21bf6b0aa5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        url: https://www.credly.com/badges/0dabaffa-5fb7-415a-8ac0-82f22bec5bf4/linked_in_profile
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="47a11624-4b30-4779-bbb8-86a4c60698e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/47a11624-4b30-4779-bbb8-86a4c60698e6/public_url
 
-      - title: Certified SAFe® 5 Practitioner ⇲
+      - title: Certified SAFe® 6 Practitioner ⇲
         content: 
           <br>       
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="0dce91ab-f3ee-4fcb-bce0-39735f318a32" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        url: https://www.credly.com/badges/077078df-716a-4d24-afe2-6af962761ffe/linked_in_profile
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="10728326-1cfa-4fcf-8aec-1d72e9adf6e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/10728326-1cfa-4fcf-8aec-1d72e9adf6e6/public_url
 
-      - title: Certified SAFe® 5 Scrum Master ⇲
+      - title: Certified SAFe® 6 Scrum Master ⇲
         content: 
           <br>       
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="fd293615-6ff9-469e-a996-6cf97e38cb77" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        url: https://www.credly.com/badges/421f95fe-800f-4478-ba9e-d7378fb5a0b2/linked_in_profile
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="bac820c8-e565-48b9-ab2b-e18be17fa20a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/bac820c8-e565-48b9-ab2b-e18be17fa20a/public_url
       
       - title: Registered Scrum Master™ ⇲
         content: 
@@ -285,11 +298,11 @@ params:
           <img src="SM-Badge.webp" style="width:210px" />
         url: https://s3.amazonaws.com/scruminc-certs/RSM-0633299
       
-      - title: Certified SAFe® 5 Agilist ⇲
+      - title: Certified SAFe® 6 Agilist ⇲
         content: |-
           <br>       
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="1c109393-9758-4493-af75-a31d127c05e7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        url: https://www.credly.com/badges/c6d27b44-d835-471d-ae63-9dfb0efe137e/linked_in_profile
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="33b1c680-6241-4fdf-b178-29083083677c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/33b1c680-6241-4fdf-b178-29083083677c/public_url
 
       - title: AI Fundamentals Practitioner Badge ⇲
         content: |-
