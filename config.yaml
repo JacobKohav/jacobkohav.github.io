@@ -53,7 +53,7 @@ Menus:
 
 params:
   title: "Hugo Profile"
-  description: Text about my cool site
+  description: Welcome to my portfolio.
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -201,12 +201,13 @@ params:
         date: "2022 - present"
         GPA: "4.00 / 4.00"
         content: |-
-          
-            | <span style="display: inline-block; width:270px"> </span> | <span style="display: inline-block; width:340px"> </span> |  |
-            | ---  | ---  | --- | 
-            | ○ NeuroLeadership   | ○ Entrepreneurship for Engineers | ○ Digital Transformation |
-            | ○ Resilience Engineering | ○ Lean and Agile Management | |
-
+            |    |     |     |
+            | :--------- | :-------- | -------- |
+            | ○  Entrepreneurship for Engineers &nbsp; | ○ Resilience Engineering &nbsp; &nbsp;| ○ NeuroLeadership |
+            | ○  Sustainbility Principles for Engineering Mgrs. &nbsp; | ○ Digital Transformation |
+            | ○ Lean and Agile Management &nbsp; &nbsp; | ○ Systems Engineering |
+            
+            
       - title: "Masters of Science in Data Science"
         school:
           name: "University of Colorado, Boulder"
@@ -214,9 +215,9 @@ params:
         date: "2021 - present"
         GPA: "4.00 / 4.00"
         content: |-       
-            | <span style="display: inline-block; width:250px"> </span> | <span style="display: inline-block; width:320px"> </span> |  |
-            | ---  | ---  | --- | 
-            | ○ Data Science as a Field   | ○ Cybersecurity for Datascience | ○ Ethical Issues in Data Science |
+            |    |     |     |
+            | :--------- | :-------- | ---------- |
+            | ○ Data Science as a Field &nbsp; &nbsp; | ○ Cybersecurity for Datascience &nbsp; &nbsp; | ○ Ethical Issues in Data Science |
 
       - title: "Bachelors in Computer Science"
         school:
@@ -225,13 +226,15 @@ params:
         date: "2020"
         GPA: "3.60 / 4.00"
         content: |-
-            |<span style="display: inline-block; width:210px"> </span> | <span style="display: inline-block; width:400px"> </span> |  |
-            | ---  | ---  |  --- | 
-            | ○ Data Structures | ○ Software Development Tools/Methodologies | ○ Human-Computer Interaction |
-            | ○ Discrete Structures | ○ Human-Centered Computing | ○ Algorithms |
-            | ○ Cognitive Science | ○ Principles of Programming Languages | ○ Computer Systems |
-            | ○ Linear Algebra | ○ Dynamic Models in Biology |  |
+            |    |     |     |
+            | :--------- | :-------- | ---------- |
+            | ○ Data Structures &nbsp; &nbsp; | ○ Software Dev. Tools/Methodologies &nbsp; &nbsp; | ○ Human-Computer Interaction |
+            | ○ Discrete Structures &nbsp; &nbsp; | ○ Human-Centered Computing &nbsp; &nbsp; | ○ Algorithms |
+            | ○ Cognitive Science &nbsp; &nbsp; | ○ Principles of Programming Languages &nbsp; &nbsp; | ○ Computer Systems |
+            | ○ Linear Algebra &nbsp; &nbsp; | ○ Dynamic Models in Biology &nbsp; &nbsp; |  |
 
+
+        # |<span style="display: inline-block; width:220px"> </span> | <span style="display: inline-block; width:320px"> </span> | <span style="display: inline-block; width:200px"> </span> |
 
         # featuredLink:
         #   enable: false

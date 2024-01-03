@@ -117,7 +117,11 @@ Jacob Kohav&#39;s portfolio
   
   
 <script>
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
 
@@ -219,6 +223,28 @@ Jacob Kohav&#39;s portfolio
                     
                     
 
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
                     
 
                 </ul>
@@ -1064,12 +1090,12 @@ Jacob Kohav&#39;s portfolio
                 
                   
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/364ce124-d362-4bc3-b0f2-7933496791f5/public_url" title="Certified SAFe® 5 Agile Product Manager ⇲" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="https://s3.amazonaws.com/scruminc-certs/RPO-8185695" title="Registered Product Owner™ ⇲" target="_blank">
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">Certified SAFe® 5 Agile Product Manager ⇲</h5>
+                            <h5 class="card-title bg-transparent">Registered Product Owner™ ⇲</h5>
                             <div class="card-text secondary-font">
                                 <center>
-                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="364ce124-d362-4bc3-b0f2-7933496791f5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                    <br> <img src="Favicon_RPO_32.svg" style="width:210px" />
                                 </center>
                             </div>
                         </div>
@@ -1079,12 +1105,12 @@ Jacob Kohav&#39;s portfolio
                 
                   
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/f7fbc2c1-82ca-4914-9a32-0eff40ff3533/linked_in_profile" title="SAFe® 5 Lean Portfolio Manager ⇲" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/3bf4e57f-d9c8-42c7-aab5-d3c7878532e9/public_url" title="Certified SAFe® 6 Release Train Engineer ⇲" target="_blank">
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">SAFe® 5 Lean Portfolio Manager ⇲</h5>
+                            <h5 class="card-title bg-transparent">Certified SAFe® 6 Release Train Engineer ⇲</h5>
                             <div class="card-text secondary-font">
                                 <center>
-                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="7b08d210-105c-463c-ac01-436649bf9eda" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="3bf4e57f-d9c8-42c7-aab5-d3c7878532e9" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </center>
                             </div>
                         </div>
@@ -1094,12 +1120,12 @@ Jacob Kohav&#39;s portfolio
                 
                   
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/0dabaffa-5fb7-415a-8ac0-82f22bec5bf4/linked_in_profile" title="Certified SAFe® 5 Advanced Scrum Master ⇲" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/317fc404-7936-4821-9d08-bbb94b08ff33/public_url" title="Certified SAFe® 6 Agile Product Manager ⇲" target="_blank">
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">Certified SAFe® 5 Advanced Scrum Master ⇲</h5>
+                            <h5 class="card-title bg-transparent">Certified SAFe® 6 Agile Product Manager ⇲</h5>
                             <div class="card-text secondary-font">
                                 <center>
-                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="810eb161-6223-48a3-943a-3e21bf6b0aa5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="317fc404-7936-4821-9d08-bbb94b08ff33" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </center>
                             </div>
                         </div>
@@ -1109,12 +1135,12 @@ Jacob Kohav&#39;s portfolio
                 
                   
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/077078df-716a-4d24-afe2-6af962761ffe/linked_in_profile" title="Certified SAFe® 5 Practitioner ⇲" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/8721bada-c00e-4d6f-8a42-fad6a7d732d5/public_url" title="SAFe® 6 Lean Portfolio Manager ⇲" target="_blank">
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">Certified SAFe® 5 Practitioner ⇲</h5>
+                            <h5 class="card-title bg-transparent">SAFe® 6 Lean Portfolio Manager ⇲</h5>
                             <div class="card-text secondary-font">
                                 <center>
-                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="0dce91ab-f3ee-4fcb-bce0-39735f318a32" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="8721bada-c00e-4d6f-8a42-fad6a7d732d5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </center>
                             </div>
                         </div>
@@ -1124,12 +1150,42 @@ Jacob Kohav&#39;s portfolio
                 
                   
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/421f95fe-800f-4478-ba9e-d7378fb5a0b2/linked_in_profile" title="Certified SAFe® 5 Scrum Master ⇲" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/47a11624-4b30-4779-bbb8-86a4c60698e6/public_url" title="Certified SAFe® 6 Advanced Scrum Master ⇲" target="_blank">
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">Certified SAFe® 5 Scrum Master ⇲</h5>
+                            <h5 class="card-title bg-transparent">Certified SAFe® 6 Advanced Scrum Master ⇲</h5>
                             <div class="card-text secondary-font">
                                 <center>
-                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="fd293615-6ff9-469e-a996-6cf97e38cb77" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="47a11624-4b30-4779-bbb8-86a4c60698e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                </center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                  
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/10728326-1cfa-4fcf-8aec-1d72e9adf6e6/public_url" title="Certified SAFe® 6 Practitioner ⇲" target="_blank">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Certified SAFe® 6 Practitioner ⇲</h5>
+                            <div class="card-text secondary-font">
+                                <center>
+                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="10728326-1cfa-4fcf-8aec-1d72e9adf6e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                                </center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                  
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/bac820c8-e565-48b9-ab2b-e18be17fa20a/public_url" title="Certified SAFe® 6 Scrum Master ⇲" target="_blank">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Certified SAFe® 6 Scrum Master ⇲</h5>
+                            <div class="card-text secondary-font">
+                                <center>
+                                    <br> <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="bac820c8-e565-48b9-ab2b-e18be17fa20a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </center>
                             </div>
                         </div>
@@ -1154,13 +1210,13 @@ Jacob Kohav&#39;s portfolio
                 
                   
                 <div class="col-lg-4 col-md-6 my-3">
-                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/c6d27b44-d835-471d-ae63-9dfb0efe137e/linked_in_profile" title="Certified SAFe® 5 Agilist ⇲" target="_blank">
+                    <a class="card my-3 h-100 p-3" href="https://www.credly.com/badges/33b1c680-6241-4fdf-b178-29083083677c/public_url" title="Certified SAFe® 6 Agilist ⇲" target="_blank">
                         <div class="card-body bg-transparent">
-                            <h5 class="card-title bg-transparent">Certified SAFe® 5 Agilist ⇲</h5>
+                            <h5 class="card-title bg-transparent">Certified SAFe® 6 Agilist ⇲</h5>
                             <div class="card-text secondary-font">
                                 <center>
                                     <br>       
-<div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="1c109393-9758-4493-af75-a31d127c05e7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="33b1c680-6241-4fdf-b178-29083083677c" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                                 </center>
                             </div>
                         </div>
@@ -1270,7 +1326,7 @@ Jacob Kohav&#39;s portfolio
                         height="40px" width="40px">
                 </a>
             </div>
-            &copy; 2023  All Rights Reserved
+            &copy; 2024  All Rights Reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">
@@ -1293,6 +1349,23 @@ Jacob Kohav&#39;s portfolio
     } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
 
 </script>
 
