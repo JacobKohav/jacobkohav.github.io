@@ -182,7 +182,7 @@ params:
       - job: "AI/ML Research Engineer"
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
-        date: "Feb 2022 - present"
+        date: "2022 - present"
         info:
           enable: false
         featuredLink:
@@ -194,7 +194,7 @@ params:
       - job: "Software Engineer"
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
-        date: "Mar 2021 - Feb 2022"
+        date: "2021 - 22"
         featuredLink:
           enable: false
           url: "https://example.com"
@@ -425,7 +425,7 @@ params:
 
       - title: "Shakespeare or not Shakespeare: that is the question"
         content: |
-          <p align='justify'>Authorship verification analysis of William Shakespeare and Thomas Middleton’s collaboration with the stylometric “rolling classification” method from the package ‘Stylo’ in the R language, utilizing supervised machine-learning classification”along with “sequential analysis” in order to inspect texts’ “stylometric signals.” Results support the hypotheses of Middleton's varying degree of contribution to "Shakespearean" plays. </p>
+          <p align='justify'>Authorship verification analysis of William Shakespeare and Thomas Middleton’s collaboration with the stylometric “rolling classification” method from the package ‘Stylo’ in the R language, utilizing supervised machine-learning classification” along with “sequential analysis” in order to inspect texts’ “stylometric signals.” Results support the hypotheses of Middleton's varying degree of contribution to "Shakespearean" plays. </p>
         image: "/shakespeare_3.jpg"
         # featured:
         #   name: Demo V2
@@ -446,7 +446,30 @@ params:
             url: https://libguides.ccu.edu/ld.php?discussion_id=919
           - icon: fa fa-chalkboard-teacher
             url: https://libguides.ccu.edu/ld.php?discussion_id=916 
-      
+
+      - title: How can the bees, be?
+        content: |
+
+          <p align='justify'>Test the correlation between honeybee hive population and temperature range experienced throughout the year. Full data science cycle of </p>
+            
+            - aggregating, 
+            - cleaning,
+            - transforming, and
+            - analyzing
+                    
+          <p align='justify'>the population and weather data with time series and scatter plots. The study suggests that there is a weak correlation between honeybee colony population loss and three-month temperature ranges. Further studies can contribute additional insight on the correlation between temperature and honeybee colony populations.</p>
+        image: "/bee_5.webp"
+        # image: "/bee_1.webp"
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Modelling"
+          - "Biology"
+          - "Population"
+        links:
+          - icon: fa fa-file
+            url: https://ucb.digication.com/colony-collapse-disorder-honeybee-population-versus-temperature-range/home
   #Contact
   contact:
     enable: true
