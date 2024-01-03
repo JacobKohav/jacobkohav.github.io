@@ -136,6 +136,21 @@ params:
           url: https://www.linkedin.com/in/jacob-kohav/
         - icon: fa fa-envelope
           url: mailto:jacob.kohav@colorado.edu?subject=Connect%20with%20Jacob
+        # - icon: fa fa-bookmark
+        # - icon: fa fa-file
+        # - icon: fa fa-address-book
+        # - icon: fa fa-stop-circle
+        # - icon: fa fa-window-maximize
+        # - icon: fa fa-atlas
+        # - icon: fa fa-file-csv
+        # - icon: fa fa-file
+        # - icon: fa fa-link
+        # - icon: fa fa-list
+        # - icon: fa fa-magnet
+        # - icon: fa fa-marker
+        # - icon: fa fa-person-booth
+        # - icon: fa fa-chalkboard
+        # - icon: fa fa-chalkboard-teacher
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
@@ -408,6 +423,30 @@ params:
           - icon: fab fa-github
             url: https://github.com/JacobKohav/Flock
 
+      - title: "Shakespeare or not Shakespeare: that is the question"
+        content: |
+          <p align='justify'>Authorship verification analysis of William Shakespeare and Thomas Middleton’s collaboration with the stylometric “rolling classification” method from the package ‘Stylo’ in the R language, utilizing supervised machine-learning classification”along with “sequential analysis” in order to inspect texts’ “stylometric signals.” Results support the hypotheses of Middleton's varying degree of contribution to "Shakespearean" plays. </p>
+        image: "/shakespeare_3.jpg"
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "R"
+          - "Support Vector Machines (SVM)"
+          - "Nearest Shrunken Centroids (NSC)"
+          - "Natural Language Processing (NLP)"
+          - "Authorship attribution"
+          - "Principle Components Analysis (PCA)"
+          - "Bootstrap Concensus Tree (BCT)"
+          - "Theater"
+        links:
+          - icon: fa fa-link
+            url: https://libguides.ccu.edu/IR/RMURC2020?t=44813
+          - icon: fa fa-file
+            url: https://libguides.ccu.edu/ld.php?discussion_id=919
+          - icon: fa fa-chalkboard-teacher
+            url: https://libguides.ccu.edu/ld.php?discussion_id=916 
+      
   #Contact
   contact:
     enable: true
