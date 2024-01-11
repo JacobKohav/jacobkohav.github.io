@@ -160,7 +160,7 @@ params:
     enable: true
     title: "About Me"
     # image: "/images/me.png"
-    image: "/portrait.jpeg"
+    image: "portrait_2.png"
     content: |-
       <br /><br /><br />I seek to improve your organization’s ability to create value by synthesizing software engineering and data science skills with Lean-Agile paradigms. I apply my technical and value-production skills to bridge the communication gap throughout the entire development chain.    
     skills:
