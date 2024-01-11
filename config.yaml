@@ -470,6 +470,52 @@ params:
         links:
           - icon: fa fa-file
             url: https://ucb.digication.com/colony-collapse-disorder-honeybee-population-versus-temperature-range/home
+      - title: TinyML for Efficiency
+        content: |
+          <p align='justify'>A comparison of status quo machine learning (ML) with intelligent computing at the edge (IC@E) including</p>
+
+            - identification of shortcomings
+            - characterization of disparity
+            - analysis of impacting factors
+
+          <br> and discussion of enterprise strategies to approach the TinyML sub-industry.
+        image: "dmainai.png"
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "TinyML"
+          - "Intelligent Computing at the Edge (IC@E)"
+        links:
+          - icon: fa fa-chalkboard-teacher
+            url: https://o365coloradoedu-my.sharepoint.com/:b:/r/personal/jako8903_colorado_edu/Documents/External%20(Publish)/TinyML-for-Efficiency_2023-07-06.pdf?csf=1&web=1&e=btEOAX
+      - title: Lean-Agile for Phase-Gate
+        content: |
+          <p align='justify'>Analysis  of how Lean-Agile methodologies can increase value production in Phase-Gate-heavy industries. Leaders evaluated include</p>
+
+            - General Dynamics <br>
+            - Australian Institute for Regional Security
+            - Siemsens
+            - CIMData
+
+          <br>and proposal of adaptation of Phase-Gate with Lean-Agile paradigms to match Digitally Transformed market rhythms.
+        # image: "agiledev.png"
+        image: "leanmeth5.jpg"
+        # image: "leanmeth4.jpg"
+
+        # image: "leandev2.png"
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Lean manufacturing"
+          - "Agile development"
+          - "Phase-Gate/Stage-Gate®"
+          - "Defense industry"
+        links:
+          - icon: fa fa-chalkboard-teacher
+            url: https://o365coloradoedu-my.sharepoint.com/:b:/r/personal/jako8903_colorado_edu/Documents/External%20(Publish)/Lean-Agile-for-Phase-Gate1.pdf?csf=1&web=1&e=LpDit2
+          # <p align='justify'>Farhan Khan</p>
   #Contact
   contact:
     enable: true
