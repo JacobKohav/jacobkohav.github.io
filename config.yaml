@@ -501,9 +501,6 @@ params:
           <br>and proposal of adaptation of Phase-Gate with Lean-Agile paradigms to match Digitally Transformed market rhythms.
         # image: "agiledev.png"
         image: "leanmeth5.jpg"
-        # image: "leanmeth4.jpg"
-
-        # image: "leandev2.png"
         # featured:
         #   name: Demo
         #   link: https://hugo-profile.netlify.app
@@ -515,6 +512,45 @@ params:
         links:
           - icon: fa fa-chalkboard-teacher
             url: https://o365coloradoedu-my.sharepoint.com/:b:/r/personal/jako8903_colorado_edu/Documents/External%20(Publish)/Lean-Agile-for-Phase-Gate1.pdf?csf=1&web=1&e=LpDit2
+      - title: Digital Twin Simulation
+        content: |
+          <p align='justify'>Capability for developing a digital representation of a vehicles in a digital versions of their environment.</p>
+          <br>
+          <em>Supported development at Lockheed Martin Co.</em>
+        # image: "agiledev.png"
+        image: "digital-twin-feature-1920_2.jpg"
+
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Digital Twin"
+        links:
+          - icon: fa fa-link
+            url: https://www.lockheedmartin.com/en-us/news/features/2021/visualizing-the-digital-thread-and-digital-twins.html
+      - title: Fire Intelligence
+        content: |
+          <p align='left'>Capability for comprehensively fighting wildfires with.</p>
+
+          - AI/ML
+          - 5G
+          - Joint All Domain Command and Control (JADC2) <br>
+
+          <em>Supporting development at Lockheed Martin Co.</em>
+        image: "fire2.jpg"
+
+        # featured:
+        #   name: Demo
+        #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Firefighting Intelligence"
+          - "Joint All Domain Command and Control (JADC2)"
+          - "5G"
+        links:
+          - icon: fa fa-link
+            url: https://www.lockheedmartin.com/en-us/products/firefighting-intelligence.html
+          - icon: fa fa-link
+            url: https://www.lockheedmartin.com/en-us/news/features/2023/fighting-fire-with-intelligence.html
           # <p align='justify'>Farhan Khan</p>
   #Contact
   contact:
