@@ -468,8 +468,8 @@ params:
           - "Biology"
           - "Population"
         links:
-          - icon: fa fa-file
-            url: https://ucb.digication.com/colony-collapse-disorder-honeybee-population-versus-temperature-range/home
+          - icon: fa fa-chalkboard-teacher
+            url: https://o365coloradoedu-my.sharepoint.com/:b:/g/personal/jako8903_colorado_edu/EWSBExReKu1Pqbc9JmfjEB4BeAHVoEruOnkuv7IcCvrQlQ?e=8TAI8C
       - title: TinyML for Efficiency
         content: |
           <p align='justify'>A comparison of status quo machine learning (ML) with intelligent computing at the edge (IC@E) including</p>
