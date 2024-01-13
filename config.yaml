@@ -285,6 +285,14 @@ params:
           <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="317fc404-7936-4821-9d08-bbb94b08ff33" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/317fc404-7936-4821-9d08-bbb94b08ff33/public_url
 
+      - title: SAFe® 6 Product Owner/Product Manager ⇲
+        content: 
+          <br>
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="89827198-bdfa-4343-afb7-827cb9cf247f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          # <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="8721bada-c00e-4d6f-8a42-fad6a7d732d5" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        # icon: fa fa-envelope
+        url: https://www.credly.com/badges/89827198-bdfa-4343-afb7-827cb9cf247f/public_url
+
       - title: SAFe® 6 Lean Portfolio Manager ⇲
         content: 
           <br>
@@ -292,17 +300,17 @@ params:
         # icon: fa fa-envelope
         url: https://www.credly.com/badges/8721bada-c00e-4d6f-8a42-fad6a7d732d5/public_url
 
-      - title: Certified SAFe® 6 Advanced Scrum Master ⇲
-        content: 
-          <br>       
-          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="47a11624-4b30-4779-bbb8-86a4c60698e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        url: https://www.credly.com/badges/47a11624-4b30-4779-bbb8-86a4c60698e6/public_url
-
       - title: Certified SAFe® 6 Practitioner ⇲
         content: 
           <br>       
           <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="10728326-1cfa-4fcf-8aec-1d72e9adf6e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/10728326-1cfa-4fcf-8aec-1d72e9adf6e6/public_url
+
+      - title: Certified SAFe® 6 Advanced Scrum Master ⇲
+        content: 
+          <br>       
+          <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="47a11624-4b30-4779-bbb8-86a4c60698e6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        url: https://www.credly.com/badges/47a11624-4b30-4779-bbb8-86a4c60698e6/public_url
 
       - title: Certified SAFe® 6 Scrum Master ⇲
         content: 
