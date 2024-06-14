@@ -215,14 +215,13 @@ params:
           url: "https://www.colorado.edu/"
         date: "2022 - present"
         GPA: "4.00 / 4.00"
-        content: |-
-            |    |     |     |
-            | :--------- | :-------- | -------- |
-            | ○  Entrepreneurship for Engineers &nbsp; | ○ Resilience Engineering &nbsp; &nbsp;| ○ NeuroLeadership |
-            | ○  Sustainbility Principles for Engineering Mgrs. &nbsp; | ○ Digital Transformation |
-            | ○ Lean and Agile Management &nbsp; &nbsp; | ○ Systems Engineering |
-            
-            
+        content: |-    
+          |    |     |     |
+          | :--------- | :-------- | -------- |
+          | ○ Lean & Agile Management &nbsp; | ○ Resilience Engineering &nbsp; &nbsp;| ○ Entrepreneurship for Engineers |
+          | ○ Finance for Engineering Mgrs.  &nbsp; | ○ Digital Transformation &nbsp; | ○ Sustainbility Principles for Engr. Mgrs.
+          | ○ Engineering Communication &nbsp; &nbsp; | ○ Systems Engineering | ○ NeuroLeadership
+       
       - title: "Masters of Science in Data Science"
         school:
           name: "University of Colorado, Boulder"
@@ -232,21 +231,21 @@ params:
         content: |-       
             |    |     |     |
             | :--------- | :-------- | ---------- |
-            | ○ Data Science as a Field &nbsp; &nbsp; | ○ Cybersecurity for Datascience &nbsp; &nbsp; | ○ Ethical Issues in Data Science |
+            | ○ Data Science as a Field &nbsp; &nbsp; &nbsp;| ○ Cybersecurity for Datascience &nbsp; &nbsp; &nbsp; &nbsp;| ○ Ethical Issues in Data Science |
 
       - title: "Bachelors in Computer Science"
         school:
           name: "University of Colorado, Boulder"
           url: "https://www.colorado.edu/"
-        date: "2020"
+        date: "- 2020"
         GPA: "3.60 / 4.00"
         content: |-
             |    |     |     |
             | :--------- | :-------- | ---------- |
-            | ○ Data Structures &nbsp; &nbsp; | ○ Software Dev. Tools/Methodologies &nbsp; &nbsp; | ○ Human-Computer Interaction |
-            | ○ Discrete Structures &nbsp; &nbsp; | ○ Human-Centered Computing &nbsp; &nbsp; | ○ Algorithms |
-            | ○ Cognitive Science &nbsp; &nbsp; | ○ Principles of Programming Languages &nbsp; &nbsp; | ○ Computer Systems |
-            | ○ Linear Algebra &nbsp; &nbsp; | ○ Dynamic Models in Biology &nbsp; &nbsp; |  |
+            | ○ Data Structures &nbsp; &nbsp; &nbsp; | ○ Software Dev. Tools/Methodologies &nbsp; &nbsp; | ○ Human-Computer Interaction |
+            | ○ Discrete Structures &nbsp; &nbsp; &nbsp;| ○ Human-Centered Computing &nbsp; &nbsp; | ○ Algorithms |
+            | ○ Cognitive Science &nbsp; &nbsp; &nbsp;| ○ Principles of Programming Languages &nbsp; &nbsp; &nbsp;| ○ Computer Systems |
+            | ○ Linear Algebra &nbsp; &nbsp; &nbsp;| ○ Dynamic Models in Biology &nbsp; &nbsp; |  |
 
 
         # |<span style="display: inline-block; width:220px"> </span> | <span style="display: inline-block; width:320px"> </span> | <span style="display: inline-block; width:200px"> </span> |
@@ -587,3 +586,22 @@ params:
   # List pages like blogs and posts
   listPages:
     disableFeaturedImage: false
+
+            #   |    |     |     |
+            # | :--------- | :-------- | -------- |
+            # | ○ Entrepreneurship for Engineers &nbsp; | ○ Resilience Engineering &nbsp; &nbsp;| ○ NeuroLeadership |
+            # | ○ Sustainbility Principles for Engr. Mgrs. &nbsp; | ○ Digital Transformation | ○ Lean & Agile Management
+            # | ○ Finance for Engineering Mgrs. &nbsp; &nbsp; | ○ Systems Engineering | ○ Engineering Communication
+
+            # |    |     |     |
+            # | :--------- | :-------- | -------- |
+            # | ○  Resilience Engineering &nbsp; | ○ Entrepreneurship for Engineers &nbsp; &nbsp;| ○ NeuroLeadership |
+            # | ○  Digital Transformation  &nbsp; | ○ Sustainbility Principles for Engr. Mgrs. &nbsp;| ○ Lean & Agile Management
+            # | ○  Systems Engineering &nbsp; &nbsp; | ○  Finance for Engineering Mgrs. | ○ Engineering Communication
+
+      #       |    |     |     |
+      #       | :--------- | :-------- | -------- |
+      #       | ○  NeuroLeadership &nbsp; | ○ Entrepreneurship for Engineers &nbsp; &nbsp;| ○ Resilience Engineering|
+      #       | ○  Lean & Agile Management &nbsp; | ○ Sustainbility Principles for Engr. Mgrs. &nbsp;| ○ Digital Transformation
+      #       | ○  Engineering Communication &nbsp; &nbsp; | ○  Finance for Engineering Mgrs. | ○ Systems Engineering
+            
