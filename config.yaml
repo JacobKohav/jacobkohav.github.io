@@ -335,7 +335,7 @@ params:
           <div data-iframe-width="210" data-iframe-height="240" data-share-badge-id="47ae6906-1d22-4468-a87e-89ee75104281" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
         url: https://www.credly.com/badges/47ae6906-1d22-4468-a87e-89ee75104281/public_url
 
-    # projects
+  # projects
   projects:
     enable: true
     # title: "Custom Name"
