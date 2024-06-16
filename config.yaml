@@ -568,11 +568,11 @@ params:
         content: |
           <p align='justify'>A program executable on an exported Mozilla Firefox browser password export to obfuscate authentication credentials. Features include</p>
             
-            - Domain name extraction 
-            - Selected obfuscation of username and passwords credentials
-            - Versioned output in `.csv` format
+            - domain name extraction
+            - selected obfuscation of username and password credentials
+            - versioned output in `.csv` format.
           
-          <p align='justify'> Applications in clude further reference and backup.</p>
+          <p align='justify'> Applications include further reference and lower-risk digital/physical backup.</p>
 
         image: "/obfuscation_1_edited_2.png"
         # featured:
