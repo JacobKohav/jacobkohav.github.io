@@ -477,6 +477,7 @@ params:
         links:
           - icon: fa fa-chalkboard-teacher
             url: https://o365coloradoedu-my.sharepoint.com/:b:/g/personal/jako8903_colorado_edu/EWSBExReKu1Pqbc9JmfjEB4BeAHVoEruOnkuv7IcCvrQlQ?e=8TAI8C
+      
       - title: TinyML for Efficiency
         content: |
           <p align='justify'>A comparison of status quo machine learning (ML) with intelligent computing at the edge (IC@E) including</p>
@@ -496,6 +497,7 @@ params:
         links:
           - icon: fa fa-chalkboard-teacher
             url: https://o365coloradoedu-my.sharepoint.com/:b:/g/personal/jako8903_colorado_edu/ERW9JYKxpdhKsQiWdOCPR7EBgCkEXawoU2rkwxE8XNQxsw?e=kEnXYR
+      
       - title: Lean-Agile for Phase-Gate
         content: |
           <p align='justify'>Analysis  of how Lean-Agile methodologies can increase value production in Phase-Gate-heavy industries. Leaders evaluated include</p>
@@ -519,6 +521,7 @@ params:
         links:
           - icon: fa fa-chalkboard-teacher
             url: https://o365coloradoedu-my.sharepoint.com/:b:/g/personal/jako8903_colorado_edu/ETR7AzM-XRVDub8uRObUB_0BJAa4LbHulq2v3AE-s4Jvhw?e=qXh9gc
+      
       - title: Digital Twin Simulation
         content: |
           <p align='justify'>Capability for developing a digital representation of vehicles in digital versions of their environment.</p>
@@ -535,6 +538,7 @@ params:
         links:
           - icon: fa fa-link
             url: https://www.lockheedmartin.com/en-us/news/features/2021/visualizing-the-digital-thread-and-digital-twins.html
+      
       - title: Fire Intelligence
         content: |
           <p align='left'>Capability for comprehensively fighting wildfires with</p>
@@ -559,6 +563,35 @@ params:
           - icon: fa fa-link
             url: https://www.lockheedmartin.com/en-us/news/features/2023/fighting-fire-with-intelligence.html
           # <p align='justify'>Farhan Khan</p>
+
+      - title: Firefox Password Obfuscator
+        content: |
+          <p align='justify'>A program executable on an exported Mozilla Firefox browser password export to obfuscate authentication credentials. Features include</p>
+            
+            - Domain name extraction 
+            - Selected obfuscation of username and passwords credentials
+            - Versioned output in `.csv` format
+          
+          <p align='justify'> Applications in clude further reference and backup.</p>
+
+        image: "/obfuscation_1_edited_2.png"
+        # featured:
+        #   name: Demo V2
+        #   link: https://hugo-profile-2.netlify.app
+        badges:
+          - "Python"
+          - "Obfuscation"
+          - "Cybersecurity"
+          - "Authentication"
+          - "Mozilla Firefox"
+          - "Pandas"
+          - "Numpy"
+          - "Data engineering"
+          - "Forward compatibility"
+          - "Extensibility (software)"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/JacobKohav/firefox-password-obsfuscator/tree/main
   #Contact
   contact:
     enable: true
