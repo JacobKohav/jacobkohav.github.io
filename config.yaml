@@ -181,10 +181,46 @@ params:
     enable: true
     # title: "Custom Name"
     items:
+      - job: "Research and Development Engineer"
+        company: "INRIA Rennes"
+        companyUrl: "https://www.inria.fr/fr/centre-inria-universite-rennes"
+        date: "2025"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"      
+        content: |
+          <p align='justify'>Test the correlation between honeybee hive population and temperature range experienced throughout the year. Full data science cycle of </p>
+
+            - analyze applicability of Data Prep Kit (lead by IBM Inc.) for applicability for programming language detection capability in software files
+            - configure, test, and benchmark StarCoder LLM for programming language detection capability in software filesSupport
+      - job: "AI/ML Research Engineer Sr."
+        company: "Lockheed Martin Co"
+        companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
+        date: "2024 - 2025"
+        info:
+          enable: false
+        featuredLink:
+          enable: false
+          name: "View the project"
+          url: "https://example.com"
+        content: |
+          <p align='justify'>Develop, consult, and lead AI-integration and fundamental Digital Transformation projects with the Advanced Technology Center; contributing to the Cognitive Mission Manager, contributed to the Cognitive Modules.</p>  
+          
+            - Leading multiple 'seedling' R&D to develop an architectural runway for MLOps model efficiency testing
+            - Leading collaboration with Latent AI, a Lockheed Martin ventures portfolio company
+            - Lead and consult multiple university collaborations
+            - Wrote and submitted 5 proposals for internal R&D; received acceptance for 3; propose to government R&D sponsors
+            - Identifying, mastering, and harnessing novel/state-of-the-art AI algorithms for enterprise introduction; delivering at complete tech. readiness level for injection into production
+            - Leading/coaching teams on Agile processes, Scrum master alignment, and facilitated JIRA, Slack adoption
+            - Developing DataOps Kubeflow pipelines for AI/ML for cleaning, munging, preprocessing, and translation
+            - Increase algorithm efficiency, develop/scale containerized orchestration with Kubernetes/Kafka/Docker in AWS, database communication in MongoDB/LakeFS
       - job: "AI/ML Research Engineer"
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
-        date: "2022 - present"
+        date: "2022 - 2024"
         info:
           enable: false
         featuredLink:
@@ -203,7 +239,15 @@ params:
         info:
           enable: false
           content: I worked as a software developer for more than one year in Amazon.
-        content: 
+        content: |
+          <p align='justify'> Developed AI/ML-powered software and customer documentation in an Agile environment in support of the Digital Twin simulator at LM Space</p>
+
+            - Develop aircraft simulation software in C++, Python and Docker
+            - Develop customer-facing documentation/training in GitLab Markdown/Confluence
+            - Utilize Agile, Kanban development methodologies with JIRA, Confluence, and Slack
+            - Integrated AI/ML model powering to increase model accuracy and efficacy 
+            - Aligned stakeholder requirements, defined problem and delivered complete implementation
+            - Mentored Data Science interns from onboarding through development to project completion
 
   # Education
   education:
