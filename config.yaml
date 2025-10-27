@@ -196,6 +196,7 @@ params:
 
             - analyze applicability of Data Prep Kit (lead by IBM Inc.) for applicability for programming language detection capability in software files
             - configure, test, and benchmark StarCoder LLM for programming language detection capability in software filesSupport
+      
       - job: "AI/ML Research Engineer Sr."
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
@@ -207,16 +208,27 @@ params:
           name: "View the project"
           url: "https://example.com"
         content: |
-          <p align='justify'>Develop, consult, and lead AI-integration and fundamental Digital Transformation projects with the Advanced Technology Center; contributing to the Cognitive Mission Manager, contributed to the Cognitive Modules.</p>  
-          
-            - Leading multiple 'seedling' R&D to develop an architectural runway for MLOps model efficiency testing
-            - Leading collaboration with Latent AI, a Lockheed Martin ventures portfolio company
-            - Lead and consult multiple university collaborations
-            - Wrote and submitted 5 proposals for internal R&D; received acceptance for 3; propose to government R&D sponsors
-            - Identifying, mastering, and harnessing novel/state-of-the-art AI algorithms for enterprise introduction; delivering at complete tech. readiness level for injection into production
-            - Leading/coaching teams on Agile processes, Scrum master alignment, and facilitated JIRA, Slack adoption
-            - Developing DataOps Kubeflow pipelines for AI/ML for cleaning, munging, preprocessing, and translation
-            - Increase algorithm efficiency, develop/scale containerized orchestration with Kubernetes/Kafka/Docker in AWS, database communication in MongoDB/LakeFS
+          <p align='justify'>Acting engineering mgr, architect, product owner, lead for framework for testing AI model efficiency at edge; software, DevSecOps, CI/CD, syst. eng. on satellite config. mgt. effort; systems eng., Agile transformation, Digital Transformation (DTx)</p>
+
+          Efficient AI IRAD
+          - Solicit, awarded $210k funding with IGNITE, ATC, and LM Ventures (LMV)
+          - Lead, architect concept, prototype, to maturity via hybrid Waterfall/Agile, Lean Startup
+          - Lead cross-org. interfaces between Space, Aero, RMS, EO business areas
+          - Introduce 8+ engs. to 6+ inner-/open-source technologies from AI Factory
+          - Demo savings of $10 – 24k (70 – 150 hrs) per use case, hardware in the loop (HWIL)
+          - Exhibit results at DoD Maintenance Symposium 2024, 25 to military customers
+          Present, demo to Code.LM; AI Summit
+          - Co-lead, consult Michigan State U. academic engagement
+          - Co-lead (with LM cyber Fellows), present, win 1/15 teams for feasible 1LMx strategy for program integration
+
+          Software Factory (SWF) & Next Generation Geo (NGG) programs
+          - Lead cross-team interface with external teams to establish initial SE and ConOps protocols for configuration mgt.
+          - Establish versioning protocol for SE protocols to co-habitate software-systems eng. efforts
+
+          SDA Wildfire program 
+          - Streamline Systems Engineering, Integration & Testing (SEIT) functions via SME input and persistent-scalable Confluence hierarchy, issue-tracking function via Jira-Agile Hive 
+          - Establish Source of Truth (SoT) practices/tracking-mechanisms for 15+ teams, 2 tranches
+        
       - job: "AI/ML Research Engineer"
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
@@ -228,7 +240,18 @@ params:
           name: "View the project"
           url: "https://example.com"
         # content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
+        content: |
+          <p align='justify'>Develop, consult, and lead AI-integration and fundamental Digital Transformation projects with the Advanced Technology Center; contributing to the Cognitive Mission Manager, contributed to the Cognitive Modules.</p>  
+          
+            - Leading multiple 'seedling' R&D to develop an architectural runway for MLOps model efficiency testing
+            - Leading collaboration with Latent AI, a Lockheed Martin ventures portfolio company
+            - Lead and consult multiple university collaborations
+            - Wrote and submitted 5 proposals for internal R&D; received acceptance for 3; propose to government R&D sponsors
+            - Identifying, mastering, and harnessing novel/state-of-the-art AI algorithms for enterprise introduction; delivering at complete tech. readiness level for injection into production
+            - Leading/coaching teams on Agile processes, Scrum master alignment, and facilitated JIRA, Slack adoption
+            - Developing DataOps Kubeflow pipelines for AI/ML for cleaning, munging, preprocessing, and translation
+            - Increase algorithm efficiency, develop/scale containerized orchestration with Kubernetes/Kafka/Docker in AWS, database communication in MongoDB/LakeFS
+      
       - job: "Software Engineer"
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
