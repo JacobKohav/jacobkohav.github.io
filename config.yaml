@@ -119,9 +119,9 @@ params:
   hero:
     enable: true
     intro: "Hello, my name is"
-    title: "Jacob"
+    title: "Jack"
     subtitle: "I bring value from every level of the enterprise."
-    content: "I am a software and machine learning-artificial intelligence engineer with skills in best leadership practices."
+    content: "I am a Sr. AI Engineer & Lead with skills in best leadership practices."
     # image: /images/hero.svg
     # image: /Simultion_of_Flocks.jpg # Doesn't work!
     button:
