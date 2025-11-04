@@ -121,7 +121,7 @@ params:
     intro: "Hello, my name is"
     title: "Jack"
     subtitle: "I bring value from every level of the enterprise."
-    content: "I am a Sr. AI Engineer & Lead with skills in best leadership practices."
+    content: "I am an AI and Software **Engineering Manager**  with skills in best leadership practices."
     # image: /images/hero.svg
     # image: /Simultion_of_Flocks.jpg # Doesn't work!
     button:
@@ -184,7 +184,7 @@ params:
       - job: "Research and Development Engineer"
         company: "INRIA Rennes"
         companyUrl: "https://www.inria.fr/fr/centre-inria-universite-rennes"
-        date: "2025"
+        date: "2025 - present"
         info:
           enable: false
         featuredLink:
@@ -255,7 +255,7 @@ params:
       - job: "Software Engineer"
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
-        date: "2021 - 22"
+        date: "2021 - 2022"
         featuredLink:
           enable: false
           url: "https://example.com"
