@@ -10,16 +10,23 @@ tags:
 description: ""
 toc: true
 ---
-This is the beginning of a series of blog posts focusing on programming language identification. 
-## Introduction
+This is the beginning of a series of blog posts focusing on programming language identification in code files.
 
+## Introduction
 This past summer, as part of work for the 
 - [CodeCommons (CC)](https://codecommons.org/) and 
 - [Software Heritage (SWH)](https://www.softwareheritage.org/) projects, 
 
-I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages in code files.
+I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages in code files. In a series of blog posts, I will share my methods, results, and findings. 
 
 ## Background
+First, some background on the two projects involved.
+- **Software Heritage** (SWH) is an effort to develop software to support open-source initiative that collects and preserves software in source code form
+- **CodeCommons** (CC) is an effort to add historical data, metadata, and contextual links to Software Heritage (SWH)
+
+Within the DiverSE team division of the CodeCommons project, one of the objectives, among several, has been to identify and categorize the syntax of code files hosted in the SWH archive.
+
+# Motivation
 
 ## Method
 
