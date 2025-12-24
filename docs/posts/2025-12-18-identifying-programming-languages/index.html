@@ -28,16 +28,20 @@
 
 
 
-<meta property="og:title" content="Contact" />
-<meta property="og:description" content="Testing the about page." />
+<meta property="og:title" content="Identifying Programming Languages" />
+<meta property="og:description" content="This is the beginning of a series of blog posts focusing on programming language identification in code files
+Introduction This past summer, as part of work for the
+CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jacobkohav.github.io/contact/" /><meta property="article:section" content="" />
-<meta property="article:published_time" content="2022-12-25T15:24:42-07:00" />
-<meta property="article:modified_time" content="2022-12-25T15:24:42-07:00" /><meta property="og:site_name" content="Hugo Profile" />
+<meta property="og:url" content="https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-12-18T22:53:58-07:00" />
+<meta property="article:modified_time" content="2025-12-23T18:27:58-07:00" /><meta property="og:site_name" content="Hugo Profile" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Contact"/>
-<meta name="twitter:description" content="Testing the about page."/>
+<meta name="twitter:title" content="Identifying Programming Languages"/>
+<meta name="twitter:description" content="This is the beginning of a series of blog posts focusing on programming language identification in code files
+Introduction This past summer, as part of work for the
+CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings."/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -108,7 +112,7 @@
 <script defer src="/fontawesome-5/all-5.15.4.js"></script>
 
   <title>
-Contact | Jacob Kohav&#39;s portfolio
+Identifying Programming Languages | Jacob Kohav&#39;s portfolio
 
   </title>
 </head>
@@ -260,18 +264,112 @@ Contact | Jacob Kohav&#39;s portfolio
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Contact</h1>
+            <h1 class="text-center mb-4">Identifying Programming Languages</h1>
             <div class="text-center">
-               
+              Kohav, Jacob 
               <small>|</small>
-              Published: (Sun) 25 Dec 2022, 15:24 UTC
+              Published: (Thu) 18 Dec 2025, 22:53 UTC
               <small>|</small>
-              Last updated: (Sun) 25 Dec 2022, 15:24 UTC
+              Last updated: (Tue) 23 Dec 2025, 18:27 UTC
             </div>
           </div>
           
           <article class="page-content  p-2">
-          <p>Testing the about page.</p>
+          <p>This is the beginning of a series of blog posts focusing on programming language identification in code files</p>
+<h2 id="introduction">Introduction</h2>
+<p>This past summer, as part of work for the</p>
+<ul>
+<li><a href="https://codecommons.org/">CodeCommons (CC)</a> and</li>
+<li><a href="https://www.softwareheritage.org/">Software Heritage (SWH)</a> projects,</li>
+</ul>
+<p>I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings.</p>
+<h2 id="background">Background</h2>
+<p>First, some background on the two projects involved.</p>
+<ul>
+<li><strong>Software Heritage</strong> (SWH) is an effort to develop software to support open-source initiative that collects and preserves software in source code form [1]</li>
+<li><strong>CodeCommons</strong> (CC) is an effort to add historical data, metadata, and contextual links to Software Heritage (SWH) [2]</li>
+</ul>
+<p>Within the DiverSE team division of the CodeCommons project, one of the objectives, among several, has been to identify and categorize the syntax of code files hosted in the SWH archive.</p>
+<h2 id="motivation-and-objectives">Motivation and Objectives</h2>
+<h3 id="broader-motivation">Broader motivation</h3>
+<ul>
+<li>What are all PLs utilized in programming industry?</li>
+<li>Is the SWH archive representative of all the (major) PLs in existence?</li>
+<li>Is there a correlation between PL popularity (TIOBE) and SWH&rsquo;s language frequency (COBOL model)? [3]</li>
+</ul>
+<h3 id="technological-objective">Technological objective</h3>
+<ul>
+<li>Determine the PLs of a code source file [3]</li>
+</ul>
+<h3 id="organizational-objective">Organizational objective</h3>
+<ul>
+<li>Determine the PL of every source file in the SWH archive; integrate the metadata into SWH&rsquo;s data COBOL model [3]</li>
+</ul>
+<h2 id="challenges">Challenges</h2>
+<h3 id="accuracy">Accuracy</h3>
+<ul>
+<li>Conventional misidentification: C++ vs. Java</li>
+<li>Language descendants and sub-families: C++ vs. C</li>
+<li>Version/dialect differentiation:
+<ul>
+<li>Fortran vs. Fortran77</li>
+<li>RMarkdown vs. Markdown [3][4][5]</li>
+</ul>
+</li>
+</ul>
+<h3 id="resource-usage">Resource-usage</h3>
+<p>for the purposes of this blog post, as well as the subsequent ones in this series, resource-usage limitations are not in scope.</p>
+<h2 id="methods">Method(s)</h2>
+<p>Now I will describe CC&rsquo;s current approach to PL identification, including the</p>
+<ul>
+<li>dataset,</li>
+<li>PL identification techniques encountered, and</li>
+<li>utilities currently explored.</li>
+</ul>
+<h3 id="dataset">Dataset</h3>
+<p>At the time when I&rsquo;d joined the CC, the team had been using <a href="https://github.com/github-linguist/linguist/tree/main/samples">the dataset</a> of the <a href="https://github.com/github-linguist/linguist/tree/main">Linguist</a> PL identification tool. This has been out of convenience of having a dataset readily curated for testing PL identification [4]</p>
+<p>Likewise, while the ultimate goal of the team is to classify data in the SWH archive, work on this specific objective began in the third part of 2025 and continues to be in progress, namely managing the protocol for traversing the SWH graph and the immense size of the data repository.</p>
+<p>Here are some details on the Linguist dataset which the team has been using thus far, and with which I&rsquo;ve continued experiments:</p>
+<ul>
+<li>3039 programming files, and</li>
+<li>680 syntaxes (i.e. PL) present [4][5][6]</li>
+</ul>
+<p>While the Linguist samples dataset has been a mainstay of our testing, it will certainly be valuable to evaluate this dataset in and of itself.</p>
+<h3 id="programming-language-identification-technique-types">Programming language identification technique types</h3>
+<p>Let&rsquo;s discuss some of the existing PL identification techniques types encountered on CC</p>
+<h3 id="classification-approaches">Classification approaches</h3>
+<ul>
+<li>Heuristics and Statistical classification</li>
+<li>Machine Learning</li>
+<li>LLM</li>
+</ul>
+<h3 id="data-delimitationprocessing-techniques">Data delimitation/processing techniques</h3>
+<ul>
+<li>Filename/extension</li>
+<li>File header: Shebang, vim/emacs modlines</li>
+<li>Core file content analysis</li>
+</ul>
+<p>Some tools also use a combination of the approaches above to classify the file&rsquo;s programmings language(s) in a sequential manner. Such an approach avoids more computationally expensive techniques (ex. processing core file contents) when a simpler approach (i.e. the filename/extension) suffices [4][5].</p>
+<h2 id="testing-method">Testing method</h2>
+<p>As can be expected, the testing method which we employ on CC is straightforward</p>
+<ol>
+<li>Select the utility being tested</li>
+<li>Provide each file from the file samples to the utility for classification</li>
+<li>Receive the classification result and record it</li>
+<li>Run an analysis of the utility classificaiton results juxtaposed against the ground truth to produce an accuracy to score.</li>
+</ol>
+<p>Throughout updates, I will describe the testing procedure in more detail.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With this basis set, we&rsquo;ll launch our exploration of PL identification in this series.</p>
+<h2 id="references">References</h2>
+<blockquote>
+<p>[1] Software Heritage. [Online]. Available: <a href="https://www.softwareheritage.org/">https://www.softwareheritage.org/</a></p>
+<p>[2] Code·Commons. [Online]. Available: <a href="https://codecommons.org/">https://codecommons.org/</a></p>
+<p>[3] Software Heritage, “Programming Language Identification (PLI) for Software Heritage,” in <em>Technical Committee Slides</em>, 18 Jul. 2025. [Online]. Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/specifications/Programming%20Language%20Identification/slides_technical_committee_2025-05.pdf">https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/specifications/Programming%20Language%20Identification/slides_technical_committee_2025-05.pdf</a>. Version: Git commit 869b6b39.</p>
+<p>[4] CodeCommons contributors. &ldquo;2025-09-23 Syntax Identification on SWH,&rdquo; CodeCommons GitLab repository, commit 227ccecb, 2025. [Online] Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons">https://gitlab.softwareheritage.org/teams/codecommons</a> (access restricted).</p>
+<p>[5] Code Commons, “Syntax Identification for CodeCommons WP3.1,” in <em>2025 CodeCommons Annual Review Slides</em>, 29 Sep. 2025. [Online]. Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/communication/2025-09-22_CC_Annual_Review/slides/Track1_Language-detection.pdf">https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/communication/2025-09-22_CC_Annual_Review/slides/Track1_Language-detection.pdf</a>. Version: Git commit 25f5129c.</p>
+<p>[6] GitHub, Inc., “Linguist sample files dataset,” GitHub Linguist repository, commit a7e40d3, 2025. [Online]. Available: <a href="https://github.com/github-linguist/linguist/tree/main/samples">https://github.com/github-linguist/linguist/tree/main/samples</a>.</p>
+</blockquote>
 
           </article>
         </div>
@@ -284,11 +382,49 @@ Contact | Jacob Kohav&#39;s portfolio
                 Table Of Contents
               </h5>
               <div class="toc-content">
-                <nav id="TableOfContents"></nav>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#background">Background</a></li>
+    <li><a href="#motivation-and-objectives">Motivation and Objectives</a>
+      <ul>
+        <li><a href="#broader-motivation">Broader motivation</a></li>
+        <li><a href="#technological-objective">Technological objective</a></li>
+        <li><a href="#organizational-objective">Organizational objective</a></li>
+      </ul>
+    </li>
+    <li><a href="#challenges">Challenges</a>
+      <ul>
+        <li><a href="#accuracy">Accuracy</a></li>
+        <li><a href="#resource-usage">Resource-usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#methods">Method(s)</a>
+      <ul>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#programming-language-identification-technique-types">Programming language identification technique types</a></li>
+        <li><a href="#classification-approaches">Classification approaches</a></li>
+        <li><a href="#data-delimitationprocessing-techniques">Data delimitation/processing techniques</a></li>
+      </ul>
+    </li>
+    <li><a href="#testing-method">Testing method</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
               </div>
           </aside>
           
 
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://jacobkohav.github.io/tags/programming-language-identification" target="_blank">programming-language-identification</a></li>
+              
+            </ul>
+          </aside>
           
 
           
@@ -297,22 +433,22 @@ Contact | Jacob Kohav&#39;s portfolio
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Contact&url=https%3a%2f%2fjacobkohav.github.io%2fcontact%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Identifying%20Programming%20Languages&url=https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Check out this blog post 'Contact' by : https%3a%2f%2fjacobkohav.github.io%2fcontact%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Check out this blog post 'Identifying%20Programming%20Languages' by Kohav%2c%20Jacob: https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="mailto:?subject=Contact&amp;body=Check out this blog post 'Contact' by : https%3a%2f%2fjacobkohav.github.io%2fcontact%2f">
+                  <a target="_blank" href="mailto:?subject=Identifying%20Programming%20Languages&amp;body=Check out this blog post 'Identifying%20Programming%20Languages' by Kohav%2c%20Jacob: https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fjacobkohav.github.io%2fcontact%2f">
+                  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
                   
                   
                     <i class="fab fa-linkedin"></i>
