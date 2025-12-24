@@ -1,12 +1,12 @@
 ---
 title: "Identifying Programming Languages"
-date: 2025-12-18T22:53:58+05:30
+date: 2025-12-18T22:53:58-07:00
+lastmod: 2025-12-23T18:27:58-07:00
 draft: false
 github_link: "https://github.com/JacobKohav"
 author: "Kohav, Jacob"
 tags:
   - programming-language-identification
-  # - "#test"
 description: ""
 toc: true
 ---
