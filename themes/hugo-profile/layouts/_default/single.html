@@ -21,7 +21,9 @@
             <div class="text-center">
               {{ .Params.author }} 
               <small>|</small>
-              {{ .Date.Format "(Mon) 02 Jan 2006, 15:04 UTC" }}
+              Published: {{ .Date.Format "(Mon) 02 Jan 2006, 15:04 UTC" }}
+              <small>|</small>
+              Last updated: {{ .Lastmod.Format "(Mon) 02 Jan 2006, 15:04 UTC" }}
             </div>
           </div>
           {{ if .Params.image }}
