@@ -6,7 +6,18 @@
     <description>Recent content on Jacob Kohav&#39;s portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Dec 2022 20:49:40 -0700</lastBuildDate><atom:link href="https://jacobkohav.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Dec 2025 22:53:58 -0700</lastBuildDate><atom:link href="https://jacobkohav.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Identifying Programming Languages</title>
+      <link>https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/</link>
+      <pubDate>Thu, 18 Dec 2025 22:53:58 -0700</pubDate>
+      
+      <guid>https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/</guid>
+      <description>This is the beginning of a series of blog posts focusing on programming language identification in code files
+Introduction This past summer, as part of work for the
+CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://jacobkohav.github.io/about/</link>
@@ -23,16 +34,6 @@
       
       <guid>https://jacobkohav.github.io/contact/</guid>
       <description>Testing the about page.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://jacobkohav.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 23 Dec 2022 20:49:40 -0700</pubDate>
-      
-      <guid>https://jacobkohav.github.io/posts/my-first-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
     </item>
     
     <item>

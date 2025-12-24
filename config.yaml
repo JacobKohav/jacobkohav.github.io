@@ -22,12 +22,12 @@ markup:
       unsafe: true
 
 Menus:
-  # main:
-  #   - identifier: blog
-  #     name: Blog
-  #     title: Blog posts
-  #     url: /blogs
-  #     weight: 1
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /posts
+      weight: 1
     # - identifier: gallery
     #   name: Gallery
     #   title: Blog posts
@@ -671,10 +671,10 @@ params:
 
   footer:
     recentPosts:
-      path: "blogs"
+      path: "posts"
       count: 3
       title: Recent Posts
-      enable: false
+      enable: true
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/JacobKohav
