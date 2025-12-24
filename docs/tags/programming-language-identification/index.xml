@@ -13,9 +13,9 @@
       <pubDate>Thu, 18 Dec 2025 22:53:58 -0700</pubDate>
       
       <guid>https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/</guid>
-      <description>This is the beginning of a series of blog posts focusing on programming language identification in code files
+      <description>This is the beginning of a series of blog posts focusing on programming language identification in code files.
 Introduction This past summer, as part of work for the
-CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings.</description>
+CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities that specialize in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings.</description>
     </item>
     
   </channel>

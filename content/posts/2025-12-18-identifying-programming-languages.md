@@ -10,14 +10,14 @@ tags:
 description: ""
 toc: true
 ---
-This is the beginning of a series of blog posts focusing on programming language identification in code files
+This is the beginning of a series of blog posts focusing on programming language identification in code files.
 
 ## Introduction
 This past summer, as part of work for the 
 - [CodeCommons (CC)](https://codecommons.org/) and 
 - [Software Heritage (SWH)](https://www.softwareheritage.org/) projects, 
 
-I set out to run a series of tests benchmarking currently existing utilities specializing in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings. 
+I set out to run a series of tests benchmarking currently existing utilities that specialize in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings. 
 
 ## Background
 First, some background on the two projects involved.
