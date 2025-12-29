@@ -28,20 +28,22 @@
 
 
 
-<meta property="og:title" content="Identifying Programming Languages" />
-<meta property="og:description" content="This is the beginning of a series of blog posts focusing on programming language identification in code files.
-Introduction This past summer, as part of work for the
-CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities that specialize in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings." />
+<meta property="og:title" content="Testing Programming Language Identification" />
+<meta property="og:description" content="In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
+Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
+Benchmarking procedure First we’ll go through the benchmarking protocol that we’ve been utilizing on the CodeCommons project.
+As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2025-12-18T22:53:58-07:00" />
-<meta property="article:modified_time" content="2025-12-23T18:27:58-07:00" /><meta property="og:site_name" content="Hugo Profile" />
+<meta property="og:url" content="https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-12-29T03:12:58+00:00" />
+<meta property="article:modified_time" content="2025-12-29T03:12:58+00:00" /><meta property="og:site_name" content="Hugo Profile" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Identifying Programming Languages"/>
-<meta name="twitter:description" content="This is the beginning of a series of blog posts focusing on programming language identification in code files.
-Introduction This past summer, as part of work for the
-CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities that specialize in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings."/>
+<meta name="twitter:title" content="Testing Programming Language Identification"/>
+<meta name="twitter:description" content="In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
+Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
+Benchmarking procedure First we’ll go through the benchmarking protocol that we’ve been utilizing on the CodeCommons project.
+As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive."/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -112,7 +114,7 @@ CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series
 <script defer src="/fontawesome-5/all-5.15.4.js"></script>
 
   <title>
-Identifying Programming Languages | Jacob Kohav&#39;s portfolio
+Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
 
   </title>
 </head>
@@ -274,112 +276,136 @@ Identifying Programming Languages | Jacob Kohav&#39;s portfolio
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Identifying Programming Languages</h1>
+            <h1 class="text-center mb-4">Testing Programming Language Identification</h1>
             <div class="text-center">
               Kohav, Jacob 
               <small>|</small>
-              Published: (Thu) 18 Dec 2025, 22:53 UTC
+              Published: (Mon) 29 Dec 2025, 03:12 UTC
               <small>|</small>
-              Last updated: (Tue) 23 Dec 2025, 18:27 UTC
+              Last updated: (Mon) 29 Dec 2025, 03:12 UTC
             </div>
           </div>
           
           <article class="page-content  p-2">
-          <p>This is the beginning of a series of blog posts focusing on programming language identification in code files.</p>
+          <p>In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.</p>
 <h2 id="introduction">Introduction</h2>
-<p>This past summer, as part of work for the</p>
+<p>In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.</p>
+<h2 id="benchmarking-procedure">Benchmarking procedure</h2>
+<p>First we’ll go through the benchmarking protocol that we’ve been utilizing on the CodeCommons project.</p>
+<p>As I’d gone over in the previous post, the project has been heavily making use of the <a href="https://github.com/github-linguist/linguist/tree/main/samples">Linguist dataset</a> from <a href="https://github.com/github-linguist/linguist/tree/main">GitHub</a> for prototyping and testing prior to full execution on the Software Heritage (SWH) archive.</p>
+<p>With this dataset, we run the</p>
 <ul>
-<li><a href="https://codecommons.org/">CodeCommons (CC)</a> and</li>
-<li><a href="https://www.softwareheritage.org/">Software Heritage (SWH)</a> projects,</li>
+<li>selected utility across</li>
+<li>each of the 3039 dataset files</li>
 </ul>
-<p>I set out to run a series of tests benchmarking currently existing utilities that specialize in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings.</p>
-<h2 id="background">Background</h2>
-<p>First, some background on the two projects involved.</p>
+<p>one by one, recording the results.</p>
+<p>We receive the results in a parseable <code>.json</code> format.</p>
+<h3 id="accuracy-benchmarking">Accuracy benchmarking</h3>
+<p>We receive the results of accuracy benchmarking in <code>benchmark-&lt;utility_name&gt;-output.json</code> and they look somewhat like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;results&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;filename&#34;</span>: <span style="color:#e6db74">&#34;/samples/Prolog/dleak-report&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;output&#34;</span>: <span style="color:#e6db74">&#34;{\&#34;/samples/Prolog/dleak-report\&#34;:{\&#34;lines\&#34;:11,\&#34;sloc\&#34;:8,\&#34;type\&#34;:\&#34;Text\&#34;,\&#34;mime_type\&#34;:\&#34;text/plain\&#34;,\&#34;language\&#34;:\&#34;Prolog\&#34;,\&#34;large\&#34;:false,\&#34;generated\&#34;:false,\&#34;vendored\&#34;:false}}\n&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;filename&#34;</span>: <span style="color:#e6db74">&#34;/samples/Prolog/plunit_test_example.plt&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;output&#34;</span>: <span style="color:#e6db74">&#34;{\&#34;/samples/Prolog/plunit_test_example.plt\&#34;:{\&#34;lines\&#34;:11,\&#34;sloc\&#34;:7,\&#34;type\&#34;:\&#34;Text\&#34;,\&#34;mime_type\&#34;:\&#34;application/vnd.hp-HPGL\&#34;,\&#34;language\&#34;:\&#34;Prolog\&#34;,\&#34;large\&#34;:false,\&#34;generated\&#34;:false,\&#34;vendored\&#34;:false}}\n&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;filename&#34;</span>: <span style="color:#e6db74">&#34;/samples/Prolog/logic-problem.pro&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;output&#34;</span>: <span style="color:#e6db74">&#34;{\&#34;/samples/Prolog/logic-problem.pro\&#34;:{\&#34;lines\&#34;:68,\&#34;sloc\&#34;:60,\&#34;type\&#34;:\&#34;Text\&#34;,\&#34;mime_type\&#34;:\&#34;text/plain\&#34;,\&#34;language\&#34;:\&#34;Prolog\&#34;,\&#34;large\&#34;:false,\&#34;generated\&#34;:false,\&#34;vendored\&#34;:false}}\n&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In each entry, we first have the filename, followed by the &ldquo;output,” including numerous elements of metadata, among which is the identified programming language.</p>
+<h3 id="speed-benchmarking">Speed benchmarking</h3>
+<p>Similarly, we have the speed-related metrics a <code>benchmark-&lt;utility_name&gt;-hyperfine.json</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;results&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;github-linguist --json &#39;/samples/Prolog/dleak-report&#39; &gt; /results/tmp_file&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;mean&#34;</span>: <span style="color:#ae81ff">0.39646997458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;stddev&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;median&#34;</span>: <span style="color:#ae81ff">0.39646997458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;user&#34;</span>: <span style="color:#ae81ff">0.36022556</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;system&#34;</span>: <span style="color:#ae81ff">0.03594272</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;min&#34;</span>: <span style="color:#ae81ff">0.39646997458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;max&#34;</span>: <span style="color:#ae81ff">0.39646997458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;times&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0.39646997458</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exit_codes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;parameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;filename&#34;</span>: <span style="color:#e6db74">&#34;/samples/Prolog/dleak-report&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;github-linguist --json &#39;/samples/Prolog/plunit_test_example.plt&#39; &gt; /results/tmp_file&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;mean&#34;</span>: <span style="color:#ae81ff">0.40772620558</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;stddev&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;median&#34;</span>: <span style="color:#ae81ff">0.40772620558</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;user&#34;</span>: <span style="color:#ae81ff">0.36764456</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;system&#34;</span>: <span style="color:#ae81ff">0.03987772</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;min&#34;</span>: <span style="color:#ae81ff">0.40772620558</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;max&#34;</span>: <span style="color:#ae81ff">0.40772620558</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;times&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0.40772620558</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exit_codes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;parameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;filename&#34;</span>: <span style="color:#e6db74">&#34;/samples/Prolog/plunit_test_example.plt&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;github-linguist --json &#39;/samples/Prolog/logic-problem.pro&#39; &gt; /results/tmp_file&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;mean&#34;</span>: <span style="color:#ae81ff">0.40617827458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;stddev&#34;</span>: <span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;median&#34;</span>: <span style="color:#ae81ff">0.40617827458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;user&#34;</span>: <span style="color:#ae81ff">0.38222656</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;system&#34;</span>: <span style="color:#ae81ff">0.023823719999999996</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;min&#34;</span>: <span style="color:#ae81ff">0.40617827458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;max&#34;</span>: <span style="color:#ae81ff">0.40617827458</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;times&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0.40617827458</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;exit_codes&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;parameters&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;filename&#34;</span>: <span style="color:#e6db74">&#34;/samples/Prolog/logic-problem.pro&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>With numerous speed-related metrics, namely the time that it required to analyze the file in question.</p>
+<h2 id="analysis">Analysis</h2>
+<p>With these benchmark results of accuracy and speed, we are able to analyze the results. Using Pandas data frames and NumPy, we produce numerous analyses in the realm of accuracy and speed.</p>
+<h3 id="accuracy-analyses">Accuracy analyses</h3>
+<p>Amongst several analyses, we produce the</p>
 <ul>
-<li><strong>Software Heritage</strong> (SWH) is an effort to develop software to support open-source initiative that collects and preserves software in source code form [1]</li>
-<li><strong>CodeCommons</strong> (CC) is an effort to add historical data, metadata, and contextual links to Software Heritage (SWH) [2]</li>
+<li>Success count per language</li>
+<li>Success rate per language</li>
+<li>List of discrepancy files</li>
+<li>Final accuracy statistics</li>
 </ul>
-<p>Within the DiverSE team division of the CodeCommons project, one of the objectives, among several, has been to identify and categorize the syntax of code files hosted in the SWH archive.</p>
-<h2 id="motivation-and-objectives">Motivation and Objectives</h2>
-<h3 id="broader-motivation">Broader motivation</h3>
+<p>Finally, we produce a graphs, visually representing the general accuracy of the utility.</p>
+<p><img src="https://raw.githubusercontent.com/JacobKohav/llm-programming-language-detection/refs/heads/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC/accuracy_with_database_syntax_comparator/accuracy_with_database_syntax_comparator-plot.png" alt="Accuracy plot for Linguist utility run on Linguist 3039 sample files"></p>
+<h3 id="speed-analyses">Speed analyses</h3>
+<p>In this analysis, we produce the</p>
 <ul>
-<li>What are all PLs utilized in programming industry?</li>
-<li>Is the SWH archive representative of all the (major) PLs in existence?</li>
-<li>Is there a correlation between PL popularity (TIOBE) and SWH&rsquo;s language frequency (COBOL model)? [3]</li>
+<li>execution time per file</li>
+<li>execution time per programming language</li>
 </ul>
-<h3 id="technological-objective">Technological objective</h3>
-<ul>
-<li>Determine the PLs of a code source file [3]</li>
-</ul>
-<h3 id="organizational-objective">Organizational objective</h3>
-<ul>
-<li>Determine the PL of every source file in the SWH archive; integrate the metadata into SWH&rsquo;s data COBOL model [3]</li>
-</ul>
-<h2 id="challenges">Challenges</h2>
-<h3 id="accuracy">Accuracy</h3>
-<ul>
-<li>Conventional misidentification: C++ vs. Java</li>
-<li>Language descendants and sub-families: C++ vs. C</li>
-<li>Version/dialect differentiation:
-<ul>
-<li>Fortran vs. Fortran77</li>
-<li>RMarkdown vs. Markdown [3][4][5]</li>
-</ul>
-</li>
-</ul>
-<h3 id="resource-usage">Resource-usage</h3>
-<p>for the purposes of this blog post, as well as the subsequent ones in this series, resource-usage limitations are not in scope.</p>
-<h2 id="methods">Method(s)</h2>
-<p>Now I will describe CC&rsquo;s current approach to PL identification, including the</p>
-<ul>
-<li>dataset,</li>
-<li>PL identification techniques encountered, and</li>
-<li>utilities currently explored.</li>
-</ul>
-<h3 id="dataset">Dataset</h3>
-<p>At the time when I&rsquo;d joined the CC, the team had been using <a href="https://github.com/github-linguist/linguist/tree/main/samples">the dataset</a> of the <a href="https://github.com/github-linguist/linguist/tree/main">Linguist</a> PL identification tool. This has been out of convenience of having a dataset readily curated for testing PL identification [4]</p>
-<p>Likewise, while the ultimate goal of the team is to classify data in the SWH archive, work on this specific objective began in the third part of 2025 and continues to be in progress, namely managing the protocol for traversing the SWH graph and the immense size of the data repository.</p>
-<p>Here are some details on the Linguist dataset which the team has been using thus far, and with which I&rsquo;ve continued experiments:</p>
-<ul>
-<li>3039 programming files, and</li>
-<li>680 syntaxes (i.e. PL) present [4][5][6]</li>
-</ul>
-<p>While the Linguist samples dataset has been a mainstay of our testing, it will certainly be valuable to evaluate this dataset in and of itself.</p>
-<h3 id="programming-language-identification-technique-types">Programming language identification technique types</h3>
-<p>Let&rsquo;s discuss some of the existing PL identification techniques types encountered on CC</p>
-<h3 id="classification-approaches">Classification approaches</h3>
-<ul>
-<li>Heuristics and Statistical classification</li>
-<li>Machine Learning</li>
-<li>LLM</li>
-</ul>
-<h3 id="data-delimitationprocessing-techniques">Data delimitation/processing techniques</h3>
-<ul>
-<li>Filename/extension</li>
-<li>File header: Shebang, vim/emacs modlines</li>
-<li>Core file content analysis</li>
-</ul>
-<p>Some tools also use a combination of the approaches above to classify the file&rsquo;s programmings language(s) in a sequential manner. Such an approach avoids more computationally expensive techniques (ex. processing core file contents) when a simpler approach (i.e. the filename/extension) suffices [4][5].</p>
-<h2 id="testing-method">Testing method</h2>
-<p>As can be expected, the testing method which we employ on CC is straightforward</p>
-<ol>
-<li>Select the utility being tested</li>
-<li>Provide each file from the file samples to the utility for classification</li>
-<li>Receive the classification result and record it</li>
-<li>Run an analysis of the utility classificaiton results juxtaposed against the ground truth to produce an accuracy to score.</li>
-</ol>
-<p>Throughout updates, I will describe the testing procedure in more detail.</p>
+<p>Likewise, we produce a graph, visually representing general speed of the utility.</p>
+<p><img src="https://raw.githubusercontent.com/JacobKohav/llm-programming-language-detection/refs/heads/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC/tool_execution_time_per_file/tool_execution_time_per_file-plot.png" alt="Accuracy plot for Linguist utility run on Linguist 3039 sample files"></p>
+<p>A full example directory of a full analysis can be found <a href="https://github.com/JacobKohav/llm-programming-language-detection/tree/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC">here</a>.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>With this basis set, we&rsquo;ll launch our exploration of PL identification in this series.</p>
-<h2 id="references">References</h2>
-<blockquote>
-<p>[1] Software Heritage. [Online]. Available: <a href="https://www.softwareheritage.org/">https://www.softwareheritage.org/</a></p>
-<p>[2] Code·Commons. [Online]. Available: <a href="https://codecommons.org/">https://codecommons.org/</a></p>
-<p>[3] Software Heritage, “Programming Language Identification (PLI) for Software Heritage,” in <em>Technical Committee Slides</em>, 18 Jul. 2025. [Online]. Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/specifications/Programming%20Language%20Identification/slides_technical_committee_2025-05.pdf">https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/specifications/Programming%20Language%20Identification/slides_technical_committee_2025-05.pdf</a>. Version: Git commit 869b6b39.</p>
-<p>[4] CodeCommons contributors. &ldquo;2025-09-23 Syntax Identification on SWH,&rdquo; CodeCommons GitLab repository, commit 227ccecb, 2025. [Online] Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons">https://gitlab.softwareheritage.org/teams/codecommons</a> (access restricted).</p>
-<p>[5] Code Commons, “Syntax Identification for CodeCommons WP3.1,” in <em>2025 CodeCommons Annual Review Slides</em>, 29 Sep. 2025. [Online]. Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/communication/2025-09-22_CC_Annual_Review/slides/Track1_Language-detection.pdf">https://gitlab.softwareheritage.org/teams/codecommons/cc-public-resources/-/blob/main/communication/2025-09-22_CC_Annual_Review/slides/Track1_Language-detection.pdf</a>. Version: Git commit 25f5129c.</p>
-<p>[6] GitHub, Inc., “Linguist sample files dataset,” GitHub Linguist repository, commit a7e40d3, 2025. [Online]. Available: <a href="https://github.com/github-linguist/linguist/tree/main/samples">https://github.com/github-linguist/linguist/tree/main/samples</a>.</p>
-</blockquote>
+<p>Having discussed the result of the programming language identification benchmarking and the analysis format, we&rsquo;ll discuss initial results of programming, language, identification, benchmarking in the next post.</p>
 
           </article>
         </div>
@@ -395,31 +421,19 @@ Identifying Programming Languages | Jacob Kohav&#39;s portfolio
                 <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#background">Background</a></li>
-    <li><a href="#motivation-and-objectives">Motivation and Objectives</a>
+    <li><a href="#benchmarking-procedure">Benchmarking procedure</a>
       <ul>
-        <li><a href="#broader-motivation">Broader motivation</a></li>
-        <li><a href="#technological-objective">Technological objective</a></li>
-        <li><a href="#organizational-objective">Organizational objective</a></li>
+        <li><a href="#accuracy-benchmarking">Accuracy benchmarking</a></li>
+        <li><a href="#speed-benchmarking">Speed benchmarking</a></li>
       </ul>
     </li>
-    <li><a href="#challenges">Challenges</a>
+    <li><a href="#analysis">Analysis</a>
       <ul>
-        <li><a href="#accuracy">Accuracy</a></li>
-        <li><a href="#resource-usage">Resource-usage</a></li>
+        <li><a href="#accuracy-analyses">Accuracy analyses</a></li>
+        <li><a href="#speed-analyses">Speed analyses</a></li>
       </ul>
     </li>
-    <li><a href="#methods">Method(s)</a>
-      <ul>
-        <li><a href="#dataset">Dataset</a></li>
-        <li><a href="#programming-language-identification-technique-types">Programming language identification technique types</a></li>
-        <li><a href="#classification-approaches">Classification approaches</a></li>
-        <li><a href="#data-delimitationprocessing-techniques">Data delimitation/processing techniques</a></li>
-      </ul>
-    </li>
-    <li><a href="#testing-method">Testing method</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
-    <li><a href="#references">References</a></li>
   </ul>
 </nav>
               </div>
@@ -433,6 +447,14 @@ Identifying Programming Languages | Jacob Kohav&#39;s portfolio
               
               <li class="list-inline-item"><a href="https://jacobkohav.github.io/tags/programming-language-identification" target="_blank">programming-language-identification</a></li>
               
+              <li class="list-inline-item"><a href="https://jacobkohav.github.io/tags/linguist" target="_blank">linguist</a></li>
+              
+              <li class="list-inline-item"><a href="https://jacobkohav.github.io/tags/library/pandas" target="_blank">library/pandas</a></li>
+              
+              <li class="list-inline-item"><a href="https://jacobkohav.github.io/tags/library/numpy" target="_blank">library/numpy</a></li>
+              
+              <li class="list-inline-item"><a href="https://jacobkohav.github.io/tags/file-format/json" target="_blank">file-format/json</a></li>
+              
             </ul>
           </aside>
           
@@ -443,22 +465,22 @@ Identifying Programming Languages | Jacob Kohav&#39;s portfolio
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Identifying%20Programming%20Languages&url=https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Testing%20Programming%20Language%20Identification&url=https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-28-testing-programming-language-identification%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Check out this blog post 'Identifying%20Programming%20Languages' by Kohav%2c%20Jacob: https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Check out this blog post 'Testing%20Programming%20Language%20Identification' by Kohav%2c%20Jacob: https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-28-testing-programming-language-identification%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="mailto:?subject=Identifying%20Programming%20Languages&amp;body=Check out this blog post 'Identifying%20Programming%20Languages' by Kohav%2c%20Jacob: https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
+                  <a target="_blank" href="mailto:?subject=Testing%20Programming%20Language%20Identification&amp;body=Check out this blog post 'Testing%20Programming%20Language%20Identification' by Kohav%2c%20Jacob: https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-28-testing-programming-language-identification%2f">
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-18-identifying-programming-languages%2f">
+                  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3a%2f%2fjacobkohav.github.io%2fposts%2f2025-12-28-testing-programming-language-identification%2f">
                   
                   
                     <i class="fab fa-linkedin"></i>
@@ -511,6 +533,25 @@ Identifying Programming Languages | Jacob Kohav&#39;s portfolio
         Recent Posts
     </div>
     <div class="row justify-content-center">
+        
+        <div class="col-lg-4 col-md-6 pt-2">
+            <div class="card h-100">
+                
+                <div class="card-body bg-transparent p-3 shadow-sm">
+                    <a href="/posts/2025-12-28-testing-programming-language-identification/" class="primary-font card-title">
+                        <h5 class="card-title bg-transparent" title="Testing Programming Language Identification">Testing Programming …</h5>
+                    </a>
+                    <div class="card-text secondary-font">
+                        <p>In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
+Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail. …</p>
+                    </div>
+                </div>
+                <div class="mt-auto card-footer">
+                    <span class="float-start">(Mon) 29 Dec 2025</span>
+                    <a href="/posts/2025-12-28-testing-programming-language-identification/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                </div>
+            </div>
+        </div>
         
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">

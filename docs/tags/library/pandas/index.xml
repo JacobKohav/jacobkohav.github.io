@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jacob Kohav&#39;s portfolio</title>
-    <link>https://jacobkohav.github.io/posts/</link>
-    <description>Recent content in Posts on Jacob Kohav&#39;s portfolio</description>
+    <title>library/pandas on Jacob Kohav&#39;s portfolio</title>
+    <link>https://jacobkohav.github.io/tags/library/pandas/</link>
+    <description>Recent content in library/pandas on Jacob Kohav&#39;s portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 29 Dec 2025 03:12:58 +0000</lastBuildDate><atom:link href="https://jacobkohav.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://jacobkohav.github.io/tags/library/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Programming Language Identification</title>
       <link>https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/</link>
@@ -17,17 +16,6 @@
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
 Benchmarking procedure First we’ll go through the benchmarking protocol that we’ve been utilizing on the CodeCommons project.
 As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive.</description>
-    </item>
-    
-    <item>
-      <title>Identifying Programming Languages</title>
-      <link>https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/</link>
-      <pubDate>Thu, 18 Dec 2025 22:53:58 -0700</pubDate>
-      
-      <guid>https://jacobkohav.github.io/posts/2025-12-18-identifying-programming-languages/</guid>
-      <description>This is the beginning of a series of blog posts focusing on programming language identification in code files.
-Introduction This past summer, as part of work for the
-CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series of tests benchmarking currently existing utilities that specialize in identifying programming languages (PL) in code files. In a series of blog posts, I will share my methods, results, and findings.</description>
     </item>
     
   </channel>

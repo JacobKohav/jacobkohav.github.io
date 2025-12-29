@@ -85,7 +85,7 @@ As can be expected, the testing method which we employ on CC is straightforward
 Throughout updates, I will describe the testing procedure in more detail.
 
 ## Conclusion
-With this basis set, we'll launch our exploration of PL identification in this series.
+With this basis set, we'll launch our exploration of PL identification in this series of posts.
 
 ## References
 > [1] Software Heritage. [Online]. Available: https://www.softwareheritage.org/
