@@ -152,7 +152,7 @@ Likewise, we produce a graph, visually representing general speed of the utility
 A full example directory of a full analysis can be found [here](https://github.com/JacobKohav/llm-programming-language-detection/tree/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC).
 
 ## Conclusion
-Having discussed the result of the programming language identification benchmarking and the analysis format, we'll discuss initial results of programming, language, identification, benchmarking in the next post.
+Having discussed the result of the programming language identification benchmarking and the analysis format, we'll discuss initial results of programming language identification benchmarking in the next post.
 
 ## References
 > [1] “PLI Benchmark,” CodeCommons GitLab repository, 20 Nov. 2024. [Online]. Available: https://gitlab.softwareheritage.org/teams/codecommons/pli-benchmark (access restricted).

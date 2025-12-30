@@ -14,8 +14,8 @@
       <guid>https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/</guid>
       <description>In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
-Benchmarking procedure First we’ll go through the benchmarking protocol that we’ve been utilizing on the CodeCommons project.
-As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive.</description>
+Benchmarking procedure First we’ll go through the benchmarking protocol, called Programming Language Identification (PLI) that we’ve been utilizing on the CodeCommons project [1].
+As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive [2].</description>
     </item>
     
   </channel>
