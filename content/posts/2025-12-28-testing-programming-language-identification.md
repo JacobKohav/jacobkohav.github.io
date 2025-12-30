@@ -1,6 +1,7 @@
 ---
 title: "Testing Programming Language Identification"
 date: 2025-12-29T03:12:58
+lastmod: 2025-12-30T04:34:58
 draft: false
 github_link: "https://github.com/JacobKohav"
 author: "Kohav, Jacob"
@@ -20,9 +21,9 @@ In the previous blog post, I introduced the background, motivation, objectives, 
 In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
 
 ## Benchmarking procedure
-First we’ll go through the benchmarking protocol that we’ve been utilizing on the CodeCommons project. 
+First we’ll go through the benchmarking protocol, called Programming Language Identification (PLI) that we’ve been utilizing on the CodeCommons project [1]. 
 
-As I’d gone over in the previous post, the project has been heavily making use of the [Linguist dataset](https://github.com/github-linguist/linguist/tree/main/samples) from [GitHub](https://github.com/github-linguist/linguist/tree/main) for prototyping and testing prior to full execution on the Software Heritage (SWH) archive.
+As I’d gone over in the previous post, the project has been heavily making use of the [Linguist dataset](https://github.com/github-linguist/linguist/tree/main/samples) from [GitHub](https://github.com/github-linguist/linguist/tree/main) for prototyping and testing prior to full execution on the Software Heritage (SWH) archive [2].
 
 With this dataset, we run the 
 - selected utility across
@@ -152,3 +153,8 @@ A full example directory of a full analysis can be found [here](https://github.c
 
 ## Conclusion
 Having discussed the result of the programming language identification benchmarking and the analysis format, we'll discuss initial results of programming, language, identification, benchmarking in the next post.
+
+## References
+> [1] “PLI Benchmark,” CodeCommons GitLab repository, 20 Nov. 2024. [Online]. Available: https://gitlab.softwareheritage.org/teams/codecommons/pli-benchmark (access restricted).
+>
+> [2] GitHub, Inc., “Linguist sample files dataset,” GitHub Linguist repository, commit a7e40d3, 2025. [Online]. Available: https://github.com/github-linguist/linguist/tree/main/samples.
