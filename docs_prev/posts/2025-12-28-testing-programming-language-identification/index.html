@@ -29,7 +29,7 @@
 
 
 <meta property="og:title" content="Testing Programming Language Identification" />
-<meta property="og:description" content="In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
+<meta property="og:description" content="In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
 Benchmarking procedure First we’ll go through the benchmarking protocol, called Programming Language Identification (PLI) that we’ve been utilizing on the CodeCommons project [1].
 As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive [2]." />
@@ -40,7 +40,7 @@ As I’d gone over in the previous post, the project has been heavily making use
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Testing Programming Language Identification"/>
-<meta name="twitter:description" content="In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
+<meta name="twitter:description" content="In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
 Benchmarking procedure First we’ll go through the benchmarking protocol, called Programming Language Identification (PLI) that we’ve been utilizing on the CodeCommons project [1].
 As I’d gone over in the previous post, the project has been heavily making use of the Linguist dataset from GitHub for prototyping and testing prior to full execution on the Software Heritage (SWH) archive [2]."/>
@@ -287,7 +287,7 @@ Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
           </div>
           
           <article class="page-content  p-2">
-          <p>In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.</p>
+          <p>In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.</p>
 <h2 id="introduction">Introduction</h2>
 <p>In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.</p>
 <h2 id="benchmarking-procedure">Benchmarking procedure</h2>
@@ -320,7 +320,7 @@ Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In each entry, we first have the filename, followed by the &ldquo;output,” including numerous elements of metadata, among which is the identified programming language.</p>
 <h3 id="speed-benchmarking">Speed benchmarking</h3>
-<p>Similarly, we have the speed-related metrics a <code>benchmark-&lt;utility_name&gt;-hyperfine.json</code> file.</p>
+<p>Similarly, we have the speed-related metrics in a <code>benchmark-&lt;utility_name&gt;-hyperfine.json</code> file.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;results&#34;</span>: [
 </span></span><span style="display:flex;"><span>    {
@@ -393,7 +393,7 @@ Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
 <li>List of discrepancy files</li>
 <li>Final accuracy statistics</li>
 </ul>
-<p>Finally, we produce a graphs, visually representing the general accuracy of the utility.</p>
+<p>Finally, we produce graphs, visually representing the general accuracy of the utility.</p>
 <p><img src="https://raw.githubusercontent.com/JacobKohav/llm-programming-language-detection/refs/heads/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC/accuracy_with_database_syntax_comparator/accuracy_with_database_syntax_comparator-plot.png" alt="Accuracy plot for Linguist utility run on Linguist 3039 sample files"></p>
 <h3 id="speed-analyses">Speed analyses</h3>
 <p>In this analysis, we produce the</p>
@@ -403,9 +403,10 @@ Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
 </ul>
 <p>Likewise, we produce a graph, visually representing general speed of the utility.</p>
 <p><img src="https://raw.githubusercontent.com/JacobKohav/llm-programming-language-detection/refs/heads/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC/tool_execution_time_per_file/tool_execution_time_per_file-plot.png" alt="Accuracy plot for Linguist utility run on Linguist 3039 sample files"></p>
+<h2 id="further-references">Further references</h2>
 <p>A full example directory of a full analysis can be found <a href="https://github.com/JacobKohav/llm-programming-language-detection/tree/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC">here</a>.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>Having discussed the result of the programming language identification benchmarking and the analysis format, we&rsquo;ll discuss initial results of programming, language, identification, benchmarking in the next post.</p>
+<p>Having discussed the result of the programming language identification benchmarking and the analysis format, we&rsquo;ll discuss initial results of programming language identification benchmarking in the next post.</p>
 <h2 id="references">References</h2>
 <blockquote>
 <p>[1] “PLI Benchmark,” CodeCommons GitLab repository, 20 Nov. 2024. [Online]. Available: <a href="https://gitlab.softwareheritage.org/teams/codecommons/pli-benchmark">https://gitlab.softwareheritage.org/teams/codecommons/pli-benchmark</a> (access restricted).</p>
@@ -438,6 +439,7 @@ Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
         <li><a href="#speed-analyses">Speed analyses</a></li>
       </ul>
     </li>
+    <li><a href="#further-references">Further references</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
     <li><a href="#references">References</a></li>
   </ul>
@@ -548,7 +550,7 @@ Testing Programming Language Identification | Jacob Kohav&#39;s portfolio
                         <h5 class="card-title bg-transparent" title="Testing Programming Language Identification">Testing Programming …</h5>
                     </a>
                     <div class="card-text secondary-font">
-                        <p>In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
+                        <p>In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail. …</p>
                     </div>
                 </div>
@@ -637,7 +639,7 @@ CodeCommons (CC) and Software Heritage (SWH) projects, I set out to run a series
                         height="40px" width="40px" class="rounded">
                 </a>
             </div>
-            &copy; 2025  All Rights Reserved
+            &copy; 2026  All Rights Reserved
             <div class="text-secondary">
                 Made with
                 <span class="text-danger">

@@ -1,7 +1,7 @@
 ---
 title: "Testing Programming Language Identification"
 date: 2025-12-29T03:12:58
-lastmod: 2025-12-30T04:34:58
+lastmod: 2026-01-09T01:50:58
 draft: false
 github_link: "https://github.com/JacobKohav"
 author: "Kohav, Jacob"
@@ -15,7 +15,7 @@ description: ""
 toc: true
 ---
 
-In the previous blog post, I introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files. 
+In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files. 
 
 ## Introduction
 In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
@@ -58,7 +58,7 @@ We receive the results of accuracy benchmarking in `benchmark-<utility_name>-out
 In each entry, we first have the filename, followed by the "output,” including numerous elements of metadata, among which is the identified programming language.
 
 ### Speed benchmarking
-Similarly, we have the speed-related metrics a `benchmark-<utility_name>-hyperfine.json` file.
+Similarly, we have the speed-related metrics in a `benchmark-<utility_name>-hyperfine.json` file.
 
 ```json
 {
@@ -136,7 +136,7 @@ Amongst several analyses, we produce the
 - List of discrepancy files 
 - Final accuracy statistics
 
-Finally, we produce a graphs, visually representing the general accuracy of the utility.
+Finally, we produce graphs, visually representing the general accuracy of the utility.
 
 ![Accuracy plot for Linguist utility run on Linguist 3039 sample files](https://raw.githubusercontent.com/JacobKohav/llm-programming-language-detection/refs/heads/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC/accuracy_with_database_syntax_comparator/accuracy_with_database_syntax_comparator-plot.png)
 
@@ -149,6 +149,7 @@ Likewise, we produce a graph, visually representing general speed of the utility
 
 ![Accuracy plot for Linguist utility run on Linguist 3039 sample files](https://raw.githubusercontent.com/JacobKohav/llm-programming-language-detection/refs/heads/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC/tool_execution_time_per_file/tool_execution_time_per_file-plot.png)
 
+## Further references
 A full example directory of a full analysis can be found [here](https://github.com/JacobKohav/llm-programming-language-detection/tree/main/analysis/01_utils/hw-unspecified/individual/analysis_linguist_2025-07JUL-16_07h39m52s--UTC).
 
 ## Conclusion
