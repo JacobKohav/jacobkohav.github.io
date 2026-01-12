@@ -8,10 +8,10 @@
     <language>en-us</language><atom:link href="https://jacobkohav.github.io/tags/library/pandas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Testing Programming Language Identification</title>
-      <link>https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/</link>
+      <link>https://jacobkohav.github.io/posts/2025-12-29-testing-programming-language-identification/</link>
       <pubDate>Mon, 29 Dec 2025 03:12:58 +0000</pubDate>
       
-      <guid>https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/</guid>
+      <guid>https://jacobkohav.github.io/posts/2025-12-29-testing-programming-language-identification/</guid>
       <description>In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
 Benchmarking procedure First we’ll go through the benchmarking protocol, called Programming Language Identification (PLI) that we’ve been utilizing on the CodeCommons project [1].

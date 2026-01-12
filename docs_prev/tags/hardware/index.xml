@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardware on Jacob Kohav&#39;s portfolio</title>
+    <link>https://jacobkohav.github.io/tags/hardware/</link>
+    <description>Recent content in hardware on Jacob Kohav&#39;s portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jan 2026 03:44:58 +0000</lastBuildDate><atom:link href="https://jacobkohav.github.io/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On “controlling” hardware environments in throughput experiments</title>
+      <link>https://jacobkohav.github.io/posts/2026-01-11/</link>
+      <pubDate>Mon, 12 Jan 2026 03:44:58 +0000</pubDate>
+      
+      <guid>https://jacobkohav.github.io/posts/2026-01-11/</guid>
+      <description>I was in the process of writing the next blog post on my initial experiments testing libraries for programming language detection, when I noticed a minor detail on environment setup. Inspired, I’m writing this post to share some details on how to “control” the hardware environment to create an experiment that is as replicable and consistent as possible.
+Initially requesting hardware resources When beginning the experiment, I went by several criteria (which I will share in more detail in a subsequent post) to select the machine(s) which I was to use on Grid5000, an HPC commonly used by computer science researchers in France.</description>
+    </item>
+    
+  </channel>
+</rss>
