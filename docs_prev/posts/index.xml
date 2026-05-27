@@ -9,20 +9,20 @@
     <lastBuildDate>Mon, 12 Jan 2026 03:44:58 +0000</lastBuildDate><atom:link href="https://jacobkohav.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>On “controlling” hardware environments in throughput experiments</title>
-      <link>https://jacobkohav.github.io/posts/2026-01-11/</link>
+      <link>https://jacobkohav.github.io/posts/2026-01-12-hardware-environment-control/</link>
       <pubDate>Mon, 12 Jan 2026 03:44:58 +0000</pubDate>
       
-      <guid>https://jacobkohav.github.io/posts/2026-01-11/</guid>
+      <guid>https://jacobkohav.github.io/posts/2026-01-12-hardware-environment-control/</guid>
       <description>I was in the process of writing the next blog post on my initial experiments testing libraries for programming language detection, when I noticed a minor detail on environment setup. Inspired, I’m writing this post to share some details on how to “control” the hardware environment to create an experiment that is as replicable and consistent as possible.
 Initially requesting hardware resources When beginning the experiment, I went by several criteria (which I will share in more detail in a subsequent post) to select the machine(s) which I was to use on Grid5000, an HPC commonly used by computer science researchers in France.</description>
     </item>
     
     <item>
       <title>Testing Programming Language Identification</title>
-      <link>https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/</link>
+      <link>https://jacobkohav.github.io/posts/2025-12-29-testing-programming-language-identification/</link>
       <pubDate>Mon, 29 Dec 2025 03:12:58 +0000</pubDate>
       
-      <guid>https://jacobkohav.github.io/posts/2025-12-28-testing-programming-language-identification/</guid>
+      <guid>https://jacobkohav.github.io/posts/2025-12-29-testing-programming-language-identification/</guid>
       <description>In the previous blog post, we introduced the background, motivation, objectives, challenges, and goals of this experiment in identifying programming languages in code files.
 Introduction In this post, will go through the benchmarking, testing, and analysis methods that I’m employing in more detail.
 Benchmarking procedure First we’ll go through the benchmarking protocol, called Programming Language Identification (PLI) that we’ve been utilizing on the CodeCommons project [1].

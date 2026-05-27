@@ -105,7 +105,7 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     brandLogo: /profile_nanu01nanu01nanu.jpg
-    brandName: "Jacob (\"Jack\") Kohav" # Brand name for the brand | default is the title variable
+    brandName: "Jacob Kohav" # Brand name for the brand | default is the title variable
     disableSearch: false
     menus:
       disableAbout: false
@@ -200,7 +200,7 @@ params:
       - job: "AI/ML Research Engineer Sr."
         company: "Lockheed Martin Co"
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
-        date: "2024 - 2025"
+        date: "2024 - present"
         info:
           enable: false
         featuredLink:
@@ -282,7 +282,7 @@ params:
         school:
           name: "University of Colorado, Boulder"
           url: "https://www.colorado.edu/"
-        date: "2022 - present"
+        date: "2022 - 2024"
         GPA: "4.00 / 4.00"
         content: |-    
           |    |     |     |
@@ -306,7 +306,7 @@ params:
         school:
           name: "University of Colorado, Boulder"
           url: "https://www.colorado.edu/"
-        date: "- 2020"
+        date: "2020"
         GPA: "3.60 / 4.00"
         content: |-
             |    |     |     |
