@@ -181,21 +181,21 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Research and Development Engineer"
-        company: "INRIA Rennes"
-        companyUrl: "https://www.inria.fr/fr/centre-inria-universite-rennes"
-        date: "2025 - present"
-        info:
-          enable: false
-        featuredLink:
-          enable: false
-          name: "View the project"
-          url: "https://example.com"      
-        content: |
-          <p align='justify'>Test the correlation between honeybee hive population and temperature range experienced throughout the year. Full data science cycle of </p>
+      # - job: "Research and Development Engineer"
+      #   company: "INRIA Rennes"
+      #   companyUrl: "https://www.inria.fr/fr/centre-inria-universite-rennes"
+      #   date: "2025 - present"
+      #   info:
+      #     enable: false
+      #   featuredLink:
+      #     enable: false
+      #     name: "View the project"
+      #     url: "https://example.com"      
+      #   content: |
+      #     <p align='justify'>Test the correlation between honeybee hive population and temperature range experienced throughout the year. Full data science cycle of </p>
 
-            - analyze applicability of Data Prep Kit (lead by IBM Inc.) for applicability for programming language detection capability in software files
-            - configure, test, and benchmark StarCoder LLM for programming language detection capability in software filesSupport
+      #       - analyze applicability of Data Prep Kit (lead by IBM Inc.) for applicability for programming language detection capability in software files
+      #       - configure, test, and benchmark StarCoder LLM for programming language detection capability in software filesSupport
       
       - job: "AI/ML Research Engineer Sr."
         company: "Lockheed Martin Co"
@@ -278,6 +278,20 @@ params:
     # title: "Custom Name"
     index: false
     items:
+      - title: "PhD in Computer Science"
+        school:
+          name: "INSA Rennes"
+          url: "https://www.insa-rennes.fr/"
+        date: "2025 - present"
+        content: |    
+          Thesis topic:
+          - How well can LLMs debloat code?
+            
+          Research questions:
+            - Q1 How efficiently can an LLM debloat code?
+            - Q2 How effectively can LLM-based debloating reduce attack surfaces?
+            - Q3 Can LLM-based debloating be generalized to other code-bases?
+
       - title: "Masters of Engineering in Engineering Management"
         school:
           name: "University of Colorado, Boulder"
